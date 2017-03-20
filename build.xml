@@ -6,10 +6,10 @@
     <target name="pre-upload" depends="phpcs, phpmd" />
     
    <target name="build"
-       depends="lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpunit"/>
+       depends="lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd"/>
 
     <target name="build-parallel"
-        depends="lint,tools-parallel,phpunit"/>
+        depends="lint,tools-parallel"/>
 
     <target name="tools-parallel" description="Run tools in parallel">
        <parallel threadCount="2">
