@@ -135,12 +135,9 @@
        </exec>
    </target>
 
-   <target name="phpdoc" description="Generate API documentation using phpDocumentor 2">
-       <exec dir="${basedir}" executable="${basedir}/build/tools/phpdox.phar" failonerror="true">
-           <!-- excluded directories need the / at the end, else phpdoc ignores it -->
-           <arg line="--title='test title' -d . -t build/api -i tests/ " />
-       </exec>
-   </target>
+    <target name="phpdox" depends="phploc-ci,phpcs-ci,phpmd-ci" description="Generate API documentation using phpDox">
+        <exec executable="${basedir}/build/tools/phpdox.phar" dir="${basedir}/build" taskname="phpdox"/>
+    </target>
 
    <target name="phpunit" description="Run unit tests with PHPUnit">
        <exec executable="${basedir}/build/tools/phpunit.phar" failonerror="true"/>
