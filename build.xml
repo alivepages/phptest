@@ -148,9 +148,7 @@
        </exec>
    </target>
 
-    <target name="phpdoc" depends="phploc-ci,phpcs-ci,phpmd-ci" description="Generate API documentation using phpDox">
-        <exec executable="${basedir}/build/tools/phpdox.phar" dir="${basedir}/build" taskname="phpdox"/>
-    </target>
+  
 
    <target name="phpunit" description="Run unit tests with PHPUnit">
        <exec executable="${basedir}/build/tools/phpunit.phar" failonerror="true"/>
