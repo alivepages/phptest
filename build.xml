@@ -151,7 +151,9 @@
   
 
    <target name="phpunit" description="Run unit tests with PHPUnit">
-       <exec executable="${basedir}/build/tools/phpunit.phar" failonerror="true"/>
+       <exec executable="${basedir}/build/tools/phpunit.phar" failonerror="true"
+             dir ="${basedir}/content/web/application/tests"
+             />
    </target>
     
     
