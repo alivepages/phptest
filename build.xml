@@ -17,10 +17,10 @@
                <antcall target="pdepend"/>
                <antcall target="phpmd-ci"/>
            </sequential>
-           <antcall target="phpcpd"/>
-           <antcall target="phpcs-ci"/>
-           <antcall target="phploc"/>
-           <antcall target="phpdoc"/>
+           <antcall target="${basedir}/build/tools/phpcpd"/>
+           <antcall target="${basedir}/build/tools/phpcs-ci"/>
+           <antcall target="${basedir}/build/tools/phploc"/>
+           <antcall target="${basedir}/build/tools/phpdoc"/>
        </parallel>
     </target>
    
@@ -60,7 +60,7 @@
    </target>
 
    <target name="phploc" description="Measure project size using PHPLOC">
-       <exec executable="phploc">
+       <exec executable="${basedir}/build/tools/phploc.phar">
            <!-- exclude tests directory -->
            <arg value="--exclude" />
            <arg path="${basedir}/tests" />
@@ -71,7 +71,7 @@
    </target>
 
    <target name="pdepend" description="Calculate software metrics using PHP_Depend">
-       <exec executable="pdepend">
+       <exec executable="${basedir}/build/tools/pdepend.phar">
            <arg value="--ignore=${basedir}/tests,${basedir}/docs" />
            <arg value="--jdepend-xml=${basedir}/build/logs/jdepend.xml" />
            <arg value="--jdepend-chart=${basedir}/build/pdepend/dependencies.svg" />
@@ -82,7 +82,7 @@
 
     <target name="phpmd"
             description="Perform project mess detection using PHPMD and print human readable output. Intended for usage on the command line before committing.">
-        <exec executable="phpmd">
+        <exec executable="${basedir}/build/tools/phpmd.phar">
             <arg path="${basedir}" />
             <arg value="text" />
             <arg value="codesize" />
@@ -92,7 +92,7 @@
     </target>
    
    <target name="phpmd-ci" description="Perform project mess detection using PHPMD creating a log file for the continuous integration server">
-       <exec executable="phpmd">
+       <exec executable="${basedir}/build/tools/phpmd.phar">
            <arg path="${basedir}" />
            <arg value="xml" />
            <arg value="codesize" />
@@ -105,7 +105,7 @@
 
     <target name="phpcs"
             description="Find coding standard violations with CodeSniffer. Use on command line before committing.">
-        <exec executable="phpcs">
+        <exec executable="${basedir}/build/tools/phpcs.phar">
             <arg value="--standard=Zend" />
             <arg value="--ignore=${basedir}/tests" />
             <arg value="--extensions=php" />
@@ -115,7 +115,7 @@
 
    <target name="phpcs-ci"
            description="Find coding standard violations using PHP_CodeSniffer creating a log file for the continuous integration server">
-       <exec executable="phpcs" output="/dev/null">
+       <exec executable="${basedir}/build/tools/phpcs.phar" output="/dev/null">
            <arg value="--report=checkstyle" />
            <arg value="--report-file=${basedir}/build/logs/checkstyle.xml" />
            <arg value="--standard=Zend" />
@@ -126,7 +126,7 @@
    </target>
 
    <target name="phpcpd" description="Find duplicate code using PHPCPD">
-       <exec executable="phpcpd">
+       <exec executable="${basedir}/build/tools/phpcpd.phar">
            <arg value="--log-pmd" />
            <arg value="${basedir}/build/logs/pmd-cpd.xml" />
            <arg value="--exclude" />
@@ -136,21 +136,21 @@
    </target>
 
    <target name="phpdoc" description="Generate API documentation using phpDocumentor 2">
-       <exec dir="${basedir}" executable="phpdoc" failonerror="true">
+       <exec dir="${basedir}" executable="${basedir}/build/tools/phpdoc.phar" failonerror="true">
            <!-- excluded directories need the / at the end, else phpdoc ignores it -->
            <arg line="--title='test title' -d . -t build/api -i tests/ " />
        </exec>
    </target>
 
    <target name="phpunit" description="Run unit tests with PHPUnit">
-       <exec executable="phpunit" failonerror="true"/>
+       <exec executable="${basedir}/build/tools/phpunit.phar" failonerror="true"/>
    </target>
     
     
    <!-- Inline bash script to run TestSuite.php and pipe its results to xmllint -->
    <!-- XML Lint then outputs the results to simpletest-results.xml -->
    <target name="simpletest" description="Run SimpleTest unit tests">
-       <exec dir="${basedir}" executable="bash" failonerror="true">
+       <exec dir="${basedir}" executable="${basedir}/build/tools/bash.phar" failonerror="true">
            <arg value="-c"/>
            <arg line='"php tests/simpletest/TestSuite.php | xmllint --format -o build/logs/simpletest-results.xml -"' />
        </exec>
@@ -158,7 +158,7 @@
     
 
    <target name="phpcb" description="Aggregate tool output with PHP_CodeBrowser">
-       <exec executable="phpcb">
+       <exec executable="${basedir}/build/tools/phpcb.phar">
            <arg value="--log" />
            <arg path="${basedir}/build/logs" />
            <arg value="--ignore" />
