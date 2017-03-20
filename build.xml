@@ -6,7 +6,7 @@
     <target name="pre-upload" depends="phpcs, phpmd" />
     
    <target name="build"
-       depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpdoc,phpunit"/>
+       depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpunit"/>
 
     <target name="build-parallel"
         depends="prepare,lint,tools-parallel,phpunit"/>
@@ -20,7 +20,7 @@
            <antcall target="${basedir}/build/tools/phpcpd"/>
            <antcall target="${basedir}/build/tools/phpcs-ci"/>
            <antcall target="${basedir}/build/tools/phploc"/>
-           <antcall target="${basedir}/build/tools/phpdoc"/>
+
        </parallel>
     </target>
    
