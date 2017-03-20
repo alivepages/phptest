@@ -6,10 +6,10 @@
     <target name="pre-upload" depends="phpcs, phpmd" />
     
    <target name="build"
-       depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpdoc,phpunit,simpletest,phpcb"/>
+       depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpdoc,phpunit"/>
 
     <target name="build-parallel"
-        depends="prepare,lint,tools-parallel,phpunit,simpletest,phpcb"/>
+        depends="prepare,lint,tools-parallel,phpunit"/>
 
     <target name="tools-parallel" description="Run tools in parallel">
        <parallel threadCount="2">
@@ -158,26 +158,5 @@
    </target>
     
     
-   <!-- Inline bash script to run TestSuite.php and pipe its results to xmllint -->
-   <!-- XML Lint then outputs the results to simpletest-results.xml -->
-   <target name="simpletest" description="Run SimpleTest unit tests">
-       <exec dir="${basedir}" executable="${basedir}/build/tools/bash.phar" failonerror="true">
-           <arg value="-c"/>
-           <arg line='"php tests/simpletest/TestSuite.php | xmllint --format -o build/logs/simpletest-results.xml -"' />
-       </exec>
-   </target>
-    
 
-   <target name="phpcb" description="Aggregate tool output with PHP_CodeBrowser">
-       <exec executable="${basedir}/build/tools/phpcb.phar">
-           <arg value="--log" />
-           <arg path="${basedir}/build/logs" />
-           <arg value="--ignore" />
-           <arg path="${basedir}/tests" />
-           <arg value="--source" />
-           <arg path="${basedir}" />
-           <arg value="--output" />
-           <arg path="${basedir}/build/code-browser" />
-       </exec>
-   </target>
 </project>
