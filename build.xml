@@ -45,7 +45,7 @@
        <apply executable="php" failonerror="true">
            <arg value="-l" />
            
-           <fileset dir="${basedir}">
+           <fileset dir="${basedir}/content/web/application">
                <include name="**/*.php" />
                <!-- exclude the tests directory, repeat line below to exclude more -->
                <exclude name="content/web/application/tests/**" />
@@ -66,7 +66,7 @@
            <arg path="${basedir}/content/web/application/tests" />
            <arg value="--log-csv" />
            <arg value="${basedir}/build/logs/phploc.csv" />
-           <arg path="${basedir}" />
+           <arg path="${basedir}/content/web/application" />
        </exec>
    </target>
     
@@ -78,8 +78,7 @@
             <arg path="${basedir}/build/logs/phploc.csv"/>
             <arg value="--log-xml"/>
             <arg path="${basedir}/build/logs/phploc.xml"/>
-            <arg path="${basedir}/src"/>
-            <arg path="${basedir}/content/web/application/tests"/>
+            <arg path="${basedir}/content/web/application"/>
         </exec>
     </target>
 
@@ -90,14 +89,14 @@
            <arg value="--jdepend-xml=${basedir}/build/logs/jdepend.xml" />
            <arg value="--jdepend-chart=${basedir}/build/pdepend/dependencies.svg" />
            <arg value="--overview-pyramid=${basedir}/build/pdepend/overview-pyramid.svg" />
-           <arg path="${basedir}" />
+           <arg path="${basedir}/content/web/application" />
        </exec>
    </target>
 
     <target name="phpmd"
             description="Perform project mess detection using PHPMD and print human readable output. Intended for usage on the command line before committing.">
         <exec executable="${basedir}/build/tools/phpmd.phar">
-            <arg path="${basedir}" />
+            <arg path="${basedir}/content/web/application" />
             <arg value="text" />
             <arg value="codesize" />
             <arg value="--exclude" />
@@ -107,7 +106,7 @@
    
    <target name="phpmd-ci" description="Perform project mess detection using PHPMD creating a log file for the continuous integration server">
        <exec executable="${basedir}/build/tools/phpmd.phar">
-           <arg path="${basedir}" />
+           <arg path="${basedir}/content/web/application" />
            <arg value="xml" />
            <arg value="codesize" />
            <arg value="--reportfile" />
@@ -123,7 +122,7 @@
             <arg value="--standard=Zend" />
             <arg value="--ignore=${basedir}/content/web/application/tests" />
             <arg value="--extensions=php" />
-            <arg path="${basedir}" />
+            <arg path="${basedir}/content/web/application" />
         </exec>
     </target>
 
@@ -135,7 +134,7 @@
            <arg value="--standard=Zend" />
            <arg value="--ignore=${basedir}/content/web/application/tests" />
            <arg value="--extensions=php" />
-           <arg path="${basedir}" />
+           <arg path="${basedir}/content/web/application" />
        </exec>
    </target>
 
@@ -145,7 +144,7 @@
            <arg value="${basedir}/build/logs/pmd-cpd.xml" />
            <arg value="--exclude" />
            <arg path="${basedir}/content/web/application/tests" />
-           <arg path="${basedir}" />
+           <arg path="${basedir}/content/web/application" />
        </exec>
    </target>
 
