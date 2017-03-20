@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /Users/joel/GitHub/apitest/content/web/system</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/nv.d3.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../js/html5shiv.min.js"></script>
+  <script src="../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../index.html">/Users/joel/GitHub/apitest/content/web</a></li>
+        <li><a href="index.html">system</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="libraries/Unit_test.php.html#51">CI_Unit_test</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Benchmark.php.html#52">CI_Benchmark</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Utf8.php.html#51">CI_Utf8</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#52">CI_DB_query_builder</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#49">CI_Session</a></td><td class="text-right">1%</td></tr>
+       <tr><td><a href="core/Security.php.html#49">CI_Security</a></td><td class="text-right">2%</td></tr>
+       <tr><td><a href="core/Lang.php.html#49">CI_Lang</a></td><td class="text-right">2%</td></tr>
+       <tr><td><a href="core/Output.php.html#51">CI_Output</a></td><td class="text-right">3%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#53">CI_DB_driver</a></td><td class="text-right">4%</td></tr>
+       <tr><td><a href="core/Log.php.html#49">CI_Log</a></td><td class="text-right">10%</td></tr>
+       <tr><td><a href="core/Config.php.html#51">CI_Config</a></td><td class="text-right">14%</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#53">CI_DB_mysqli_driver</a></td><td class="text-right">15%</td></tr>
+       <tr><td><a href="core/Hooks.php.html#51">CI_Hooks</a></td><td class="text-right">18%</td></tr>
+       <tr><td><a href="core/URI.php.html#51">CI_URI</a></td><td class="text-right">19%</td></tr>
+       <tr><td><a href="core/Router.php.html#51">CI_Router</a></td><td class="text-right">47%</td></tr>
+       <tr><td><a href="core/Model.php.html#49">CI_Model</a></td><td class="text-right">66%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="database/DB_query_builder.php.html#52">CI_DB_query_builder</a></td><td class="text-right">103362</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#53">CI_DB_driver</a></td><td class="text-right">38446</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#49">CI_Session</a></td><td class="text-right">16196</td></tr>
+       <tr><td><a href="core/Output.php.html#51">CI_Output</a></td><td class="text-right">6822</td></tr>
+       <tr><td><a href="core/Security.php.html#49">CI_Security</a></td><td class="text-right">5944</td></tr>
+       <tr><td><a href="core/URI.php.html#51">CI_URI</a></td><td class="text-right">2980</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#53">CI_DB_mysqli_driver</a></td><td class="text-right">1564</td></tr>
+       <tr><td><a href="libraries/Unit_test.php.html#51">CI_Unit_test</a></td><td class="text-right">1122</td></tr>
+       <tr><td><a href="core/Config.php.html#51">CI_Config</a></td><td class="text-right">1099</td></tr>
+       <tr><td><a href="core/Lang.php.html#49">CI_Lang</a></td><td class="text-right">644</td></tr>
+       <tr><td><a href="core/Hooks.php.html#51">CI_Hooks</a></td><td class="text-right">541</td></tr>
+       <tr><td><a href="core/Router.php.html#51">CI_Router</a></td><td class="text-right">482</td></tr>
+       <tr><td><a href="core/Log.php.html#49">CI_Log</a></td><td class="text-right">478</td></tr>
+       <tr><td><a href="core/Utf8.php.html#51">CI_Utf8</a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="core/Benchmark.php.html#52">CI_Benchmark</a></td><td class="text-right">42</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="database/DB_query_builder.php.html#1479"><abbr title="CI_DB_query_builder::_insert_batch">_insert_batch</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1432"><abbr title="CI_DB_query_builder::insert_batch">insert_batch</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1398"><abbr title="CI_DB_query_builder::get_where">get_where</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1494"><abbr title="CI_DB_query_builder::set_insert_batch">set_insert_batch</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1553"><abbr title="CI_DB_query_builder::get_compiled_insert">get_compiled_insert</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1624"><abbr title="CI_DB_query_builder::_validate_insert">_validate_insert</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1588"><abbr title="CI_DB_query_builder::insert">insert</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1359"><abbr title="CI_DB_query_builder::count_all_results">count_all_results</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1329"><abbr title="CI_DB_query_builder::get">get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1218"><abbr title="CI_DB_query_builder::limit">limit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1160"><abbr title="CI_DB_query_builder::order_by">order_by</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1145"><abbr title="CI_DB_query_builder::or_having">or_having</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1234"><abbr title="CI_DB_query_builder::offset">offset</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1250"><abbr title="CI_DB_query_builder::_limit">_limit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1298"><abbr title="CI_DB_query_builder::get_compiled_select">get_compiled_select</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1267"><abbr title="CI_DB_query_builder::set">set</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1654"><abbr title="CI_DB_query_builder::replace">replace</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1694"><abbr title="CI_DB_query_builder::_replace">_replace</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2056"><abbr title="CI_DB_query_builder::get_compiled_delete">get_compiled_delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2040"><abbr title="CI_DB_query_builder::_truncate">_truncate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2006"><abbr title="CI_DB_query_builder::truncate">truncate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2077"><abbr title="CI_DB_query_builder::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2138"><abbr title="CI_DB_query_builder::_delete">_delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2174"><abbr title="CI_DB_query_builder::set_dbprefix">set_dbprefix</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2154"><abbr title="CI_DB_query_builder::dbprefix">dbprefix</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1973"><abbr title="CI_DB_query_builder::empty_table">empty_table</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1927"><abbr title="CI_DB_query_builder::set_update_batch">set_update_batch</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1727"><abbr title="CI_DB_query_builder::get_compiled_update">get_compiled_update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1711"><abbr title="CI_DB_query_builder::_from_tables">_from_tables</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1760"><abbr title="CI_DB_query_builder::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1802"><abbr title="CI_DB_query_builder::_validate_update">_validate_update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1888"><abbr title="CI_DB_query_builder::_update_batch">_update_batch</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1833"><abbr title="CI_DB_query_builder::update_batch">update_batch</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1128"><abbr title="CI_DB_query_builder::having">having</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1085"><abbr title="CI_DB_query_builder::group_by">group_by</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#442"><abbr title="CI_DB_query_builder::distinct">distinct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#421"><abbr title="CI_DB_query_builder::_create_alias_from_table">_create_alias_from_table</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#380"><abbr title="CI_DB_query_builder::_max_min_avg_sum">_max_min_avg_sum</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#458"><abbr title="CI_DB_query_builder::from">from</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#512"><abbr title="CI_DB_query_builder::join">join</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#618"><abbr title="CI_DB_query_builder::or_where">or_where</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#600"><abbr title="CI_DB_query_builder::where">where</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#360"><abbr title="CI_DB_query_builder::select_sum">select_sum</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#344"><abbr title="CI_DB_query_builder::select_avg">select_avg</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1729"><abbr title="CI_DB_driver::protect_identifiers">protect_identifiers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1656"><abbr title="CI_DB_driver::display_error">display_error</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1895"><abbr title="CI_DB_driver::_reset_select">_reset_select</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#270"><abbr title="CI_DB_query_builder::select">select</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#328"><abbr title="CI_DB_query_builder::select_min">select_min</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#312"><abbr title="CI_DB_query_builder::select_max">select_max</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#640"><abbr title="CI_DB_query_builder::_wh">_wh</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#705"><abbr title="CI_DB_query_builder::where_in">where_in</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#999"><abbr title="CI_DB_query_builder::or_group_start">or_group_start</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#972"><abbr title="CI_DB_query_builder::group_start">group_start</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#913"><abbr title="CI_DB_query_builder::_like">_like</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1011"><abbr title="CI_DB_query_builder::not_group_start">not_group_start</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1023"><abbr title="CI_DB_query_builder::or_not_group_start">or_not_group_start</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1065"><abbr title="CI_DB_query_builder::_group_get_type">_group_get_type</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1035"><abbr title="CI_DB_query_builder::group_end">group_end</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#890"><abbr title="CI_DB_query_builder::or_not_like">or_not_like</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#871"><abbr title="CI_DB_query_builder::or_like">or_like</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#741"><abbr title="CI_DB_query_builder::where_not_in">where_not_in</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#723"><abbr title="CI_DB_query_builder::or_where_in">or_where_in</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#759"><abbr title="CI_DB_query_builder::or_where_not_in">or_where_not_in</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#781"><abbr title="CI_DB_query_builder::_where_in">_where_in</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#852"><abbr title="CI_DB_query_builder::not_like">not_like</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#833"><abbr title="CI_DB_query_builder::like">like</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2189"><abbr title="CI_DB_query_builder::_track_aliases">_track_aliases</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2235"><abbr title="CI_DB_query_builder::_compile_select">_compile_select</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#652"><abbr title="CI_Session::userdata">userdata</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#637"><abbr title="CI_Session::get_userdata">get_userdata</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#622"><abbr title="CI_Session::sess_regenerate">sess_regenerate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#692"><abbr title="CI_Session::set_userdata">set_userdata</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#717"><abbr title="CI_Session::unset_userdata">unset_userdata</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#756"><abbr title="CI_Session::has_userdata">has_userdata</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#741"><abbr title="CI_Session::all_userdata">all_userdata</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#607"><abbr title="CI_Session::sess_destroy">sess_destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#593"><abbr title="CI_Session::__set">__set</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#429"><abbr title="CI_Session::unmark_flash">unmark_flash</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#405"><abbr title="CI_Session::get_flash_keys">get_flash_keys</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#461"><abbr title="CI_Session::mark_as_temp">mark_as_temp</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#513"><abbr title="CI_Session::get_temp_keys">get_temp_keys</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#568"><abbr title="CI_Session::__get">__get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#537"><abbr title="CI_Session::unmark_temp">unmark_temp</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#771"><abbr title="CI_Session::flashdata">flashdata</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#804"><abbr title="CI_Session::set_flashdata">set_flashdata</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Unit_test.php.html#274"><abbr title="CI_Unit_test::result">result</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Unit_test.php.html#259"><abbr title="CI_Unit_test::active">active</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Unit_test.php.html#244"><abbr title="CI_Unit_test::use_strict">use_strict</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Unit_test.php.html#319"><abbr title="CI_Unit_test::set_template">set_template</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Unit_test.php.html#333"><abbr title="CI_Unit_test::_backtrace">_backtrace</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Unit_test.php.html#366"><abbr title="CI_Unit_test::_parse_template">_parse_template</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Unit_test.php.html#349"><abbr title="CI_Unit_test::_default_template">_default_template</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Unit_test.php.html#194"><abbr title="CI_Unit_test::report">report</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Unit_test.php.html#148"><abbr title="CI_Unit_test::run">run</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#835"><abbr title="CI_Session::tempdata">tempdata</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#820"><abbr title="CI_Session::keep_flashdata">keep_flashdata</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#869"><abbr title="CI_Session::set_tempdata">set_tempdata</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#885"><abbr title="CI_Session::unset_tempdata">unset_tempdata</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Unit_test.php.html#127"><abbr title="CI_Unit_test::set_test_items">set_test_items</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Unit_test.php.html#112"><abbr title="CI_Unit_test::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#368"><abbr title="CI_Session::mark_as_flash">mark_as_flash</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#331"><abbr title="CI_Session::_ci_init_vars">_ci_init_vars</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2660"><abbr title="CI_DB_query_builder::reset_query">reset_query</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2631"><abbr title="CI_DB_query_builder::_is_literal">_is_literal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2577"><abbr title="CI_DB_query_builder::_merge_cache">_merge_cache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2675"><abbr title="CI_DB_query_builder::_reset_run">_reset_run</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2690"><abbr title="CI_DB_query_builder::_reset_select">_reset_select</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#149"><abbr title="CI_DB_mysqli_driver::reconnect">reconnect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2717"><abbr title="CI_DB_query_builder::_reset_write">_reset_write</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2549"><abbr title="CI_DB_query_builder::flush_cache">flush_cache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2534"><abbr title="CI_DB_query_builder::stop_cache">stop_cache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2383"><abbr title="CI_DB_query_builder::_compile_group_by">_compile_group_by</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2308"><abbr title="CI_DB_query_builder::_compile_wh">_compile_wh</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2419"><abbr title="CI_DB_query_builder::_compile_order_by">_compile_order_by</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2453"><abbr title="CI_DB_query_builder::_object_to_array">_object_to_array</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2519"><abbr title="CI_DB_query_builder::start_cache">start_cache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2483"><abbr title="CI_DB_query_builder::_object_to_array_batch">_object_to_array_batch</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#165"><abbr title="CI_DB_mysqli_driver::db_select">db_select</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#201"><abbr title="CI_DB_mysqli_driver::version">version</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#403"><abbr title="CI_DB_mysqli_driver::field_data">field_data</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#390"><abbr title="CI_DB_mysqli_driver::_list_columns">_list_columns</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#368"><abbr title="CI_DB_mysqli_driver::_list_tables">_list_tables</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#439"><abbr title="CI_DB_mysqli_driver::error">error</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#462"><abbr title="CI_DB_mysqli_driver::_from_tables">_from_tables</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#260"><abbr title="CI_Session::_configure">_configure</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#188"><abbr title="CI_Session::_ci_load_classes">_ci_load_classes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#353"><abbr title="CI_DB_mysqli_driver::insert_id">insert_id</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#341"><abbr title="CI_DB_mysqli_driver::affected_rows">affected_rows</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#234"><abbr title="CI_DB_mysqli_driver::_prep_query">_prep_query</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#219"><abbr title="CI_DB_mysqli_driver::_execute">_execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#254"><abbr title="CI_DB_mysqli_driver::trans_begin">trans_begin</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#280"><abbr title="CI_DB_mysqli_driver::trans_commit">trans_commit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#329"><abbr title="CI_DB_mysqli_driver::_escape_str">_escape_str</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#304"><abbr title="CI_DB_mysqli_driver::trans_rollback">trans_rollback</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Benchmark.php.html#70"><abbr title="CI_Benchmark::mark">mark</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1641"><abbr title="CI_DB_driver::_close">_close</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Security.php.html#728"><abbr title="CI_Security::strip_image_tags">strip_image_tags</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Security.php.html#698"><abbr title="CI_Security::sanitize_filename">sanitize_filename</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Security.php.html#745"><abbr title="CI_Security::_compact_exploded_words">_compact_exploded_words</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Security.php.html#773"><abbr title="CI_Security::_remove_evil_attributes">_remove_evil_attributes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Security.php.html#835"><abbr title="CI_Security::_js_link_removal">_js_link_removal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Security.php.html#813"><abbr title="CI_Security::_sanitize_naughty_html">_sanitize_naughty_html</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Security.php.html#623"><abbr title="CI_Security::entity_decode">entity_decode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Security.php.html#570"><abbr title="CI_Security::get_random_bytes">get_random_bytes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Security.php.html#290"><abbr title="CI_Security::csrf_show_error">csrf_show_error</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Security.php.html#205"><abbr title="CI_Security::csrf_verify">csrf_verify</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Security.php.html#303"><abbr title="CI_Security::get_csrf_hash">get_csrf_hash</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Security.php.html#316"><abbr title="CI_Security::get_csrf_token_name">get_csrf_token_name</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Security.php.html#549"><abbr title="CI_Security::xss_hash">xss_hash</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Security.php.html#349"><abbr title="CI_Security::xss_clean">xss_clean</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Security.php.html#860"><abbr title="CI_Security::_js_img_removal">_js_img_removal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Security.php.html#879"><abbr title="CI_Security::_convert_attribute">_convert_attribute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/URI.php.html#362"><abbr title="CI_URI::rsegment">rsegment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/URI.php.html#342"><abbr title="CI_URI::segment">segment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/URI.php.html#389"><abbr title="CI_URI::uri_to_assoc">uri_to_assoc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/URI.php.html#407"><abbr title="CI_URI::ruri_to_assoc">ruri_to_assoc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/URI.php.html#494"><abbr title="CI_URI::assoc_to_uri">assoc_to_uri</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/URI.php.html#426"><abbr title="CI_URI::_uri_to_assoc">_uri_to_assoc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1601"><abbr title="CI_DB_driver::_cache_init">_cache_init</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/URI.php.html#253"><abbr title="CI_URI::_parse_query_string">_parse_query_string</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Security.php.html#919"><abbr title="CI_Security::_decode_entity">_decode_entity</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Security.php.html#896"><abbr title="CI_Security::_filter_attributes">_filter_attributes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Security.php.html#942"><abbr title="CI_Security::_do_never_allowed">_do_never_allowed</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Security.php.html#961"><abbr title="CI_Security::_csrf_set_hash">_csrf_set_hash</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/URI.php.html#197"><abbr title="CI_URI::_parse_request_uri">_parse_request_uri</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Router.php.html#499"><abbr title="CI_Router::set_directory">set_directory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Output.php.html#761"><abbr title="CI_Output::set_cache_header">set_cache_header</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Hooks.php.html#165"><abbr title="CI_Hooks::_run_hook">_run_hook</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Hooks.php.html#133"><abbr title="CI_Hooks::call_hook">call_hook</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Lang.php.html#88"><abbr title="CI_Lang::load">load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Lang.php.html#190"><abbr title="CI_Lang::line">line</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Model.php.html#71"><abbr title="CI_Model::__get">__get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Log.php.html#114"><abbr title="CI_Log::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Config.php.html#313"><abbr title="CI_Config::_uri_string">_uri_string</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Config.php.html#290"><abbr title="CI_Config::base_url">base_url</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Benchmark.php.html#128"><abbr title="CI_Benchmark::memory_usage">memory_usage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Benchmark.php.html#95"><abbr title="CI_Benchmark::elapsed_time">elapsed_time</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Config.php.html#119"><abbr title="CI_Config::load">load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Config.php.html#208"><abbr title="CI_Config::slash_item">slash_item</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Config.php.html#235"><abbr title="CI_Config::site_url">site_url</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Output.php.html#156"><abbr title="CI_Output::get_output">get_output</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Output.php.html#171"><abbr title="CI_Output::set_output">set_output</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Output.php.html#383"><abbr title="CI_Output::cache">cache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Output.php.html#359"><abbr title="CI_Output::set_profiler_sections">set_profiler_sections</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Output.php.html#405"><abbr title="CI_Output::_display">_display</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Output.php.html#543"><abbr title="CI_Output::_write_cache">_write_cache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Output.php.html#713"><abbr title="CI_Output::delete_cache">delete_cache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Output.php.html#642"><abbr title="CI_Output::_display_cache">_display_cache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Output.php.html#342"><abbr title="CI_Output::enable_profiler">enable_profiler</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Output.php.html#328"><abbr title="CI_Output::set_status_header">set_status_header</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Output.php.html#207"><abbr title="CI_Output::set_header">set_header</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Output.php.html#187"><abbr title="CI_Output::append_output">append_output</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Output.php.html#231"><abbr title="CI_Output::set_content_type">set_content_type</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Output.php.html#270"><abbr title="CI_Output::get_content_type">get_content_type</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Output.php.html#291"><abbr title="CI_Output::get_header">get_header</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/URI.php.html#517"><abbr title="CI_URI::slash_segment">slash_segment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/URI.php.html#298"><abbr title="CI_URI::_remove_relative_directory">_remove_relative_directory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#897"><abbr title="CI_DB_driver::compile_binds">compile_binds</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1457"><abbr title="CI_DB_driver::_has_operator">_has_operator</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#961"><abbr title="CI_DB_driver::is_write_type">is_write_type</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#974"><abbr title="CI_DB_driver::elapsed_time">elapsed_time</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#998"><abbr title="CI_DB_driver::last_query">last_query</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#986"><abbr title="CI_DB_driver::total_queries">total_queries</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1470"><abbr title="CI_DB_driver::_get_operator">_get_operator</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/URI.php.html#533"><abbr title="CI_URI::slash_rsegment">slash_rsegment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#837"><abbr title="CI_DB_driver::trans_complete">trans_complete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1405"><abbr title="CI_DB_driver::update_string">update_string</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#883"><abbr title="CI_DB_driver::trans_status">trans_status</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1535"><abbr title="CI_DB_driver::cache_set_path">cache_set_path</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1508"><abbr title="CI_DB_driver::call_function">call_function</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1014"><abbr title="CI_DB_driver::escape">escape</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1046"><abbr title="CI_DB_driver::escape_str">escape_str</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1288"><abbr title="CI_DB_driver::field_data">field_data</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1275"><abbr title="CI_DB_driver::field_exists">field_exists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1436"><abbr title="CI_DB_driver::_update">_update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1304"><abbr title="CI_DB_driver::escape_identifiers">escape_identifiers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1390"><abbr title="CI_DB_driver::_insert">_insert</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1365"><abbr title="CI_DB_driver::insert_string">insert_string</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1224"><abbr title="CI_DB_driver::list_fields">list_fields</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1211"><abbr title="CI_DB_driver::table_exists">table_exists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1097"><abbr title="CI_DB_driver::_escape_str">_escape_str</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1084"><abbr title="CI_DB_driver::escape_like_str">escape_like_str</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1113"><abbr title="CI_DB_driver::primary">primary</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1130"><abbr title="CI_DB_driver::count_all">count_all</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1156"><abbr title="CI_DB_driver::list_tables">list_tables</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#799"><abbr title="CI_DB_driver::trans_strict">trans_strict</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#812"><abbr title="CI_DB_driver::trans_start">trans_start</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Utf8.php.html#90"><abbr title="CI_Utf8::clean_string">clean_string</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1559"><abbr title="CI_DB_driver::cache_off">cache_off</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Utf8.php.html#119"><abbr title="CI_Utf8::safe_ascii_for_xml">safe_ascii_for_xml</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Utf8.php.html#135"><abbr title="CI_Utf8::convert_to_utf8">convert_to_utf8</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#782"><abbr title="CI_DB_driver::trans_off">trans_off</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Utf8.php.html#159"><abbr title="CI_Utf8::is_ascii">is_ascii</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1573"><abbr title="CI_DB_driver::cache_delete">cache_delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/Utf8.php.html#60"><abbr title="CI_Utf8::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/URI.php.html#612"><abbr title="CI_URI::total_rsegments">total_rsegments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/URI.php.html#600"><abbr title="CI_URI::total_segments">total_segments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1587"><abbr title="CI_DB_driver::cache_delete_all">cache_delete_all</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/URI.php.html#624"><abbr title="CI_URI::uri_string">uri_string</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/URI.php.html#636"><abbr title="CI_URI::ruri_string">ruri_string</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#456"><abbr title="CI_DB_driver::db_connect">db_connect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#468"><abbr title="CI_DB_driver::db_pconnect">db_pconnect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#575"><abbr title="CI_DB_driver::_version">_version</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#552"><abbr title="CI_DB_driver::version">version</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#596"><abbr title="CI_DB_driver::query">query</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/URI.php.html#553"><abbr title="CI_URI::_slash_segment">_slash_segment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#764"><abbr title="CI_DB_driver::simple_query">simple_query</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#740"><abbr title="CI_DB_driver::load_rdriver">load_rdriver</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#537"><abbr title="CI_DB_driver::platform">platform</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1547"><abbr title="CI_DB_driver::cache_on">cache_on</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#486"><abbr title="CI_DB_driver::reconnect">reconnect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#500"><abbr title="CI_DB_driver::db_select">db_select</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/URI.php.html#576"><abbr title="CI_URI::segment_array">segment_array</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="core/URI.php.html#588"><abbr title="CI_URI::rsegment_array">rsegment_array</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#69"><abbr title="CI_Session::__construct">__construct</abbr></a></td><td class="text-right">5%</td></tr>
+       <tr><td><a href="core/Log.php.html#161"><abbr title="CI_Log::write_log">write_log</abbr></a></td><td class="text-right">16%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#385"><abbr title="CI_DB_driver::initialize">initialize</abbr></a></td><td class="text-right">21%</td></tr>
+       <tr><td><a href="core/Security.php.html#169"><abbr title="CI_Security::__construct">__construct</abbr></a></td><td class="text-right">29%</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#513"><abbr title="CI_DB_driver::db_set_charset">db_set_charset</abbr></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="core/Router.php.html#123"><abbr title="CI_Router::__construct">__construct</abbr></a></td><td class="text-right">38%</td></tr>
+       <tr><td><a href="core/Router.php.html#291"><abbr title="CI_Router::_set_default_controller">_set_default_controller</abbr></a></td><td class="text-right">38%</td></tr>
+       <tr><td><a href="core/URI.php.html#99"><abbr title="CI_URI::__construct">__construct</abbr></a></td><td class="text-right">42%</td></tr>
+       <tr><td><a href="core/Router.php.html#163"><abbr title="CI_Router::_set_routing">_set_routing</abbr></a></td><td class="text-right">43%</td></tr>
+       <tr><td><a href="core/Router.php.html#366"><abbr title="CI_Router::_parse_routes">_parse_routes</abbr></a></td><td class="text-right">51%</td></tr>
+       <tr><td><a href="core/URI.php.html#324"><abbr title="CI_URI::filter_uri">filter_uri</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="core/Router.php.html#249"><abbr title="CI_Router::_set_request">_set_request</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#107"><abbr title="CI_DB_mysqli_driver::db_connect">db_connect</abbr></a></td><td class="text-right">68%</td></tr>
+       <tr><td><a href="core/Router.php.html#333"><abbr title="CI_Router::_validate_request">_validate_request</abbr></a></td><td class="text-right">70%</td></tr>
+       <tr><td><a href="core/URI.php.html#151"><abbr title="CI_URI::_set_uri_string">_set_uri_string</abbr></a></td><td class="text-right">73%</td></tr>
+       <tr><td><a href="core/Config.php.html#190"><abbr title="CI_Config::item">item</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="core/Config.php.html#84"><abbr title="CI_Config::__construct">__construct</abbr></a></td><td class="text-right">76%</td></tr>
+       <tr><td><a href="core/Hooks.php.html#88"><abbr title="CI_Hooks::__construct">__construct</abbr></a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="core/Output.php.html#132"><abbr title="CI_Output::__construct">__construct</abbr></a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="database/DB_driver.php.html#1729"><abbr title="CI_DB_driver::protect_identifiers">protect_identifiers</abbr></a></td><td class="text-right">930</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#596"><abbr title="CI_DB_driver::query">query</abbr></a></td><td class="text-right">650</td></tr>
+       <tr><td><a href="core/Output.php.html#405"><abbr title="CI_Output::_display">_display</abbr></a></td><td class="text-right">462</td></tr>
+       <tr><td><a href="core/Lang.php.html#88"><abbr title="CI_Lang::load">load</abbr></a></td><td class="text-right">462</td></tr>
+       <tr><td><a href="core/Hooks.php.html#165"><abbr title="CI_Hooks::_run_hook">_run_hook</abbr></a></td><td class="text-right">380</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#69"><abbr title="CI_Session::__construct">__construct</abbr></a></td><td class="text-right">323</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#188"><abbr title="CI_Session::_ci_load_classes">_ci_load_classes</abbr></a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1304"><abbr title="CI_DB_driver::escape_identifiers">escape_identifiers</abbr></a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#640"><abbr title="CI_DB_query_builder::_wh">_wh</abbr></a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#512"><abbr title="CI_DB_query_builder::join">join</abbr></a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="core/Config.php.html#119"><abbr title="CI_Config::load">load</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="core/Output.php.html#543"><abbr title="CI_Output::_write_cache">_write_cache</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="core/URI.php.html#197"><abbr title="CI_URI::_parse_request_uri">_parse_request_uri</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#260"><abbr title="CI_Session::_configure">_configure</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1160"><abbr title="CI_DB_query_builder::order_by">order_by</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="core/Log.php.html#114"><abbr title="CI_Log::__construct">__construct</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2077"><abbr title="CI_DB_query_builder::delete">delete</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="core/URI.php.html#426"><abbr title="CI_URI::_uri_to_assoc">_uri_to_assoc</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="core/Security.php.html#623"><abbr title="CI_Security::entity_decode">entity_decode</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="core/Output.php.html#642"><abbr title="CI_Output::_display_cache">_display_cache</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#913"><abbr title="CI_DB_query_builder::_like">_like</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="core/Security.php.html#349"><abbr title="CI_Security::xss_clean">xss_clean</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2308"><abbr title="CI_DB_query_builder::_compile_wh">_compile_wh</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="core/Log.php.html#161"><abbr title="CI_Log::write_log">write_log</abbr></a></td><td class="text-right">112</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2577"><abbr title="CI_DB_query_builder::_merge_cache">_merge_cache</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#897"><abbr title="CI_DB_driver::compile_binds">compile_binds</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="core/Security.php.html#570"><abbr title="CI_Security::get_random_bytes">get_random_bytes</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1833"><abbr title="CI_DB_query_builder::update_batch">update_batch</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="core/Security.php.html#205"><abbr title="CI_Security::csrf_verify">csrf_verify</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1494"><abbr title="CI_DB_query_builder::set_insert_batch">set_insert_batch</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2235"><abbr title="CI_DB_query_builder::_compile_select">_compile_select</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#781"><abbr title="CI_DB_query_builder::_where_in">_where_in</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1156"><abbr title="CI_DB_driver::list_tables">list_tables</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1432"><abbr title="CI_DB_query_builder::insert_batch">insert_batch</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1224"><abbr title="CI_DB_driver::list_fields">list_fields</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1014"><abbr title="CI_DB_driver::escape">escape</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1927"><abbr title="CI_DB_query_builder::set_update_batch">set_update_batch</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1656"><abbr title="CI_DB_driver::display_error">display_error</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="core/Config.php.html#235"><abbr title="CI_Config::site_url">site_url</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#385"><abbr title="CI_DB_driver::initialize">initialize</abbr></a></td><td class="text-right">58</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2631"><abbr title="CI_DB_query_builder::_is_literal">_is_literal</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#429"><abbr title="CI_Session::unmark_flash">unmark_flash</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1085"><abbr title="CI_DB_query_builder::group_by">group_by</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="core/Output.php.html#713"><abbr title="CI_Output::delete_cache">delete_cache</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#461"><abbr title="CI_Session::mark_as_temp">mark_as_temp</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1654"><abbr title="CI_DB_query_builder::replace">replace</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2419"><abbr title="CI_DB_query_builder::_compile_order_by">_compile_order_by</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#835"><abbr title="CI_Session::tempdata">tempdata</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#537"><abbr title="CI_Session::unmark_temp">unmark_temp</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="libraries/Unit_test.php.html#194"><abbr title="CI_Unit_test::report">report</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#771"><abbr title="CI_Session::flashdata">flashdata</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="core/Router.php.html#163"><abbr title="CI_Router::_set_routing">_set_routing</abbr></a></td><td class="text-right">43</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#380"><abbr title="CI_DB_query_builder::_max_min_avg_sum">_max_min_avg_sum</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1802"><abbr title="CI_DB_query_builder::_validate_update">_validate_update</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="libraries/Unit_test.php.html#274"><abbr title="CI_Unit_test::result">result</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#837"><abbr title="CI_DB_driver::trans_complete">trans_complete</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#458"><abbr title="CI_DB_query_builder::from">from</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#270"><abbr title="CI_DB_query_builder::select">select</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1624"><abbr title="CI_DB_query_builder::_validate_insert">_validate_insert</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="core/Output.php.html#231"><abbr title="CI_Output::set_content_type">set_content_type</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2189"><abbr title="CI_DB_query_builder::_track_aliases">_track_aliases</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#331"><abbr title="CI_Session::_ci_init_vars">_ci_init_vars</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#368"><abbr title="CI_Session::mark_as_flash">mark_as_flash</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="core/Security.php.html#961"><abbr title="CI_Security::_csrf_set_hash">_csrf_set_hash</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#652"><abbr title="CI_Session::userdata">userdata</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1508"><abbr title="CI_DB_driver::call_function">call_function</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="core/Hooks.php.html#133"><abbr title="CI_Hooks::call_hook">call_hook</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2383"><abbr title="CI_DB_query_builder::_compile_group_by">_compile_group_by</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2453"><abbr title="CI_DB_query_builder::_object_to_array">_object_to_array</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="core/Router.php.html#366"><abbr title="CI_Router::_parse_routes">_parse_routes</abbr></a></td><td class="text-right">36</td></tr>
+       <tr><td><a href="core/Output.php.html#291"><abbr title="CI_Output::get_header">get_header</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1888"><abbr title="CI_DB_query_builder::_update_batch">_update_batch</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2483"><abbr title="CI_DB_query_builder::_object_to_array_batch">_object_to_array_batch</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="libraries/Unit_test.php.html#148"><abbr title="CI_Unit_test::run">run</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1760"><abbr title="CI_DB_query_builder::update">update</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1359"><abbr title="CI_DB_query_builder::count_all_results">count_all_results</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1267"><abbr title="CI_DB_query_builder::set">set</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="core/URI.php.html#298"><abbr title="CI_URI::_remove_relative_directory">_remove_relative_directory</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="core/URI.php.html#253"><abbr title="CI_URI::_parse_query_string">_parse_query_string</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="core/Utf8.php.html#60"><abbr title="CI_Utf8::__construct">__construct</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="core/URI.php.html#99"><abbr title="CI_URI::__construct">__construct</abbr></a></td><td class="text-right">28</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#552"><abbr title="CI_DB_driver::version">version</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#972"><abbr title="CI_DB_query_builder::group_start">group_start</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#405"><abbr title="CI_Session::get_flash_keys">get_flash_keys</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1398"><abbr title="CI_DB_query_builder::get_where">get_where</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="core/Lang.php.html#190"><abbr title="CI_Lang::line">line</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2006"><abbr title="CI_DB_query_builder::truncate">truncate</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#280"><abbr title="CI_DB_mysqli_driver::trans_commit">trans_commit</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#254"><abbr title="CI_DB_mysqli_driver::trans_begin">trans_begin</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#304"><abbr title="CI_DB_mysqli_driver::trans_rollback">trans_rollback</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="core/Config.php.html#313"><abbr title="CI_Config::_uri_string">_uri_string</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1046"><abbr title="CI_DB_driver::escape_str">escape_str</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="core/Utf8.php.html#90"><abbr title="CI_Utf8::clean_string">clean_string</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1973"><abbr title="CI_DB_query_builder::empty_table">empty_table</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#513"><abbr title="CI_Session::get_temp_keys">get_temp_keys</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1470"><abbr title="CI_DB_driver::_get_operator">_get_operator</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="core/Benchmark.php.html#95"><abbr title="CI_Benchmark::elapsed_time">elapsed_time</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="libraries/Unit_test.php.html#366"><abbr title="CI_Unit_test::_parse_template">_parse_template</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="core/Router.php.html#123"><abbr title="CI_Router::__construct">__construct</abbr></a></td><td class="text-right">14</td></tr>
+       <tr><td><a href="core/Security.php.html#169"><abbr title="CI_Security::__construct">__construct</abbr></a></td><td class="text-right">13</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#149"><abbr title="CI_DB_mysqli_driver::reconnect">reconnect</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="core/Security.php.html#896"><abbr title="CI_Security::_filter_attributes">_filter_attributes</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1601"><abbr title="CI_DB_driver::_cache_init">_cache_init</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="core/Config.php.html#208"><abbr title="CI_Config::slash_item">slash_item</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="core/Router.php.html#499"><abbr title="CI_Router::set_directory">set_directory</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="core/Utf8.php.html#135"><abbr title="CI_Utf8::convert_to_utf8">convert_to_utf8</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="core/Output.php.html#761"><abbr title="CI_Output::set_cache_header">set_cache_header</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#368"><abbr title="CI_DB_mysqli_driver::_list_tables">_list_tables</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1436"><abbr title="CI_DB_driver::_update">_update</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1405"><abbr title="CI_DB_driver::update_string">update_string</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#403"><abbr title="CI_DB_mysqli_driver::field_data">field_data</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#439"><abbr title="CI_DB_mysqli_driver::error">error</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1727"><abbr title="CI_DB_query_builder::get_compiled_update">get_compiled_update</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#462"><abbr title="CI_DB_mysqli_driver::_from_tables">_from_tables</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="core/URI.php.html#553"><abbr title="CI_URI::_slash_segment">_slash_segment</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="libraries/Unit_test.php.html#333"><abbr title="CI_Unit_test::_backtrace">_backtrace</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1130"><abbr title="CI_DB_driver::count_all">count_all</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1218"><abbr title="CI_DB_query_builder::limit">limit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#568"><abbr title="CI_Session::__get">__get</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="core/Security.php.html#773"><abbr title="CI_Security::_remove_evil_attributes">_remove_evil_attributes</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="core/Security.php.html#549"><abbr title="CI_Security::xss_hash">xss_hash</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#812"><abbr title="CI_DB_driver::trans_start">trans_start</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#692"><abbr title="CI_Session::set_userdata">set_userdata</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="core/Output.php.html#270"><abbr title="CI_Output::get_content_type">get_content_type</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="core/Output.php.html#359"><abbr title="CI_Output::set_profiler_sections">set_profiler_sections</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#717"><abbr title="CI_Session::unset_userdata">unset_userdata</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1298"><abbr title="CI_DB_query_builder::get_compiled_select">get_compiled_select</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1329"><abbr title="CI_DB_query_builder::get">get</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1588"><abbr title="CI_DB_query_builder::insert">insert</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="core/Security.php.html#698"><abbr title="CI_Security::sanitize_filename">sanitize_filename</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1553"><abbr title="CI_DB_query_builder::get_compiled_insert">get_compiled_insert</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#165"><abbr title="CI_DB_mysqli_driver::db_select">db_select</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="libraries/Unit_test.php.html#127"><abbr title="CI_Unit_test::set_test_items">set_test_items</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="core/Output.php.html#207"><abbr title="CI_Output::set_header">set_header</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#234"><abbr title="CI_DB_mysqli_driver::_prep_query">_prep_query</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#107"><abbr title="CI_DB_mysqli_driver::db_connect">db_connect</abbr></a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#513"><abbr title="CI_DB_driver::db_set_charset">db_set_charset</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="core/Router.php.html#291"><abbr title="CI_Router::_set_default_controller">_set_default_controller</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="core/URI.php.html#151"><abbr title="CI_URI::_set_uri_string">_set_uri_string</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="core/URI.php.html#324"><abbr title="CI_URI::filter_uri">filter_uri</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="core/Router.php.html#249"><abbr title="CI_Router::_set_request">_set_request</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="core/Hooks.php.html#88"><abbr title="CI_Hooks::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="core/Output.php.html#342"><abbr title="CI_Output::enable_profiler">enable_profiler</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#804"><abbr title="CI_Session::set_flashdata">set_flashdata</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1035"><abbr title="CI_DB_query_builder::group_end">group_end</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1065"><abbr title="CI_DB_query_builder::_group_get_type">_group_get_type</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1234"><abbr title="CI_DB_query_builder::offset">offset</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="core/Security.php.html#942"><abbr title="CI_Security::_do_never_allowed">_do_never_allowed</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1113"><abbr title="CI_DB_driver::primary">primary</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="libraries/Session/Session.php.html#869"><abbr title="CI_Session::set_tempdata">set_tempdata</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1573"><abbr title="CI_DB_driver::cache_delete">cache_delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1365"><abbr title="CI_DB_driver::insert_string">insert_string</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1587"><abbr title="CI_DB_driver::cache_delete_all">cache_delete_all</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="core/Output.php.html#383"><abbr title="CI_Output::cache">cache</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#442"><abbr title="CI_DB_query_builder::distinct">distinct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#421"><abbr title="CI_DB_query_builder::_create_alias_from_table">_create_alias_from_table</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#1250"><abbr title="CI_DB_query_builder::_limit">_limit</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#799"><abbr title="CI_DB_driver::trans_strict">trans_strict</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="database/drivers/mysqli/mysqli_driver.php.html#201"><abbr title="CI_DB_mysqli_driver::version">version</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2154"><abbr title="CI_DB_query_builder::dbprefix">dbprefix</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="core/Config.php.html#290"><abbr title="CI_Config::base_url">base_url</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="core/URI.php.html#494"><abbr title="CI_URI::assoc_to_uri">assoc_to_uri</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="core/URI.php.html#342"><abbr title="CI_URI::segment">segment</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2138"><abbr title="CI_DB_query_builder::_delete">_delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="database/DB_query_builder.php.html#2675"><abbr title="CI_DB_query_builder::_reset_run">_reset_run</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#764"><abbr title="CI_DB_driver::simple_query">simple_query</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#740"><abbr title="CI_DB_driver::load_rdriver">load_rdriver</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="core/URI.php.html#362"><abbr title="CI_URI::rsegment">rsegment</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="database/DB_driver.php.html#1288"><abbr title="CI_DB_driver::field_data">field_data</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="core/Router.php.html#333"><abbr title="CI_Router::_validate_request">_validate_request</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="core/Config.php.html#84"><abbr title="CI_Config::__construct">__construct</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="core/Config.php.html#190"><abbr title="CI_Config::item">item</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="core/Output.php.html#132"><abbr title="CI_Output::__construct">__construct</abbr></a></td><td class="text-right">3</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.2.4</a> using <a href="https://secure.php.net/" target="_top">PHP 5.5.36</a> and <a href="https://phpunit.de/">PHPUnit 4.8.26</a> at Mon Mar 20 14:58:26 EDT 2017.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/holder.min.js" type="text/javascript"></script>
+  <script src="../js/d3.min.js" type="text/javascript"></script>
+  <script src="../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([4,5,5,0,0,1,0,1,0,0,0,2], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([255,1,1,2,3,2,1,3,5,1,0,17], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,6,"<a href=\"core\/Benchmark.php.html#52\">CI_Benchmark<\/a>"],[14.285714285714,41,"<a href=\"core\/Config.php.html#51\">CI_Config<\/a>"],[100,3,"<a href=\"core\/Controller.php.html#52\">CI_Controller<\/a>"],[18.987341772152,31,"<a href=\"core\/Hooks.php.html#51\">CI_Hooks<\/a>"],[2.9411764705882,26,"<a href=\"core\/Lang.php.html#49\">CI_Lang<\/a>"],[10.144927536232,25,"<a href=\"core\/Log.php.html#49\">CI_Log<\/a>"],[66.666666666667,2,"<a href=\"core\/Model.php.html#49\">CI_Model<\/a>"],[3.0651340996169,86,"<a href=\"core\/Output.php.html#51\">CI_Output<\/a>"],[47.904191616766,55,"<a href=\"core\/Router.php.html#51\">CI_Router<\/a>"],[2.0491803278689,79,"<a href=\"core\/Security.php.html#49\">CI_Security<\/a>"],[19.767441860465,75,"<a href=\"core\/URI.php.html#51\">CI_URI<\/a>"],[0,14,"<a href=\"core\/Utf8.php.html#51\">CI_Utf8<\/a>"],[100,0,"<a href=\"database\/DB.php.html#190\">CI_DB<\/a>"],[4.3396226415094,209,"<a href=\"database\/DB_driver.php.html#53\">CI_DB_driver<\/a>"],[0,321,"<a href=\"database\/DB_query_builder.php.html#52\">CI_DB_query_builder<\/a>"],[15.384615384615,50,"<a href=\"database\/drivers\/mysqli\/mysqli_driver.php.html#53\">CI_DB_mysqli_driver<\/a>"],[1.1627906976744,129,"<a href=\"libraries\/Session\/Session.php.html#49\">CI_Session<\/a>"],[0,33,"<a href=\"libraries\/Unit_test.php.html#51\">CI_Unit_test<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"core\/Benchmark.php.html#70\">CI_Benchmark::mark<\/a>"],[0,4,"<a href=\"core\/Benchmark.php.html#95\">CI_Benchmark::elapsed_time<\/a>"],[0,1,"<a href=\"core\/Benchmark.php.html#128\">CI_Benchmark::memory_usage<\/a>"],[76.923076923077,5,"<a href=\"core\/Config.php.html#84\">CI_Config::__construct<\/a>"],[0,13,"<a href=\"core\/Config.php.html#119\">CI_Config::load<\/a>"],[75,4,"<a href=\"core\/Config.php.html#190\">CI_Config::item<\/a>"],[0,3,"<a href=\"core\/Config.php.html#208\">CI_Config::slash_item<\/a>"],[0,8,"<a href=\"core\/Config.php.html#235\">CI_Config::site_url<\/a>"],[0,2,"<a href=\"core\/Config.php.html#290\">CI_Config::base_url<\/a>"],[0,4,"<a href=\"core\/Config.php.html#313\">CI_Config::_uri_string<\/a>"],[100,1,"<a href=\"core\/Config.php.html#339\">CI_Config::system_url<\/a>"],[100,1,"<a href=\"core\/Config.php.html#354\">CI_Config::set_item<\/a>"],[100,2,"<a href=\"core\/Controller.php.html#66\">CI_Controller::__construct<\/a>"],[100,1,"<a href=\"core\/Controller.php.html#91\">CI_Controller::get_instance<\/a>"],[78.947368421053,6,"<a href=\"core\/Hooks.php.html#88\">CI_Hooks::__construct<\/a>"],[0,6,"<a href=\"core\/Hooks.php.html#133\">CI_Hooks::call_hook<\/a>"],[0,19,"<a href=\"core\/Hooks.php.html#165\">CI_Hooks::_run_hook<\/a>"],[100,1,"<a href=\"core\/Lang.php.html#70\">CI_Lang::__construct<\/a>"],[0,21,"<a href=\"core\/Lang.php.html#88\">CI_Lang::load<\/a>"],[0,4,"<a href=\"core\/Lang.php.html#190\">CI_Lang::line<\/a>"],[0,12,"<a href=\"core\/Log.php.html#114\">CI_Log::__construct<\/a>"],[16.279069767442,13,"<a href=\"core\/Log.php.html#161\">CI_Log::write_log<\/a>"],[100,1,"<a href=\"core\/Model.php.html#56\">CI_Model::__construct<\/a>"],[0,1,"<a href=\"core\/Model.php.html#71\">CI_Model::__get<\/a>"],[88.888888888889,3,"<a href=\"core\/Output.php.html#132\">CI_Output::__construct<\/a>"],[0,1,"<a href=\"core\/Output.php.html#156\">CI_Output::get_output<\/a>"],[0,1,"<a href=\"core\/Output.php.html#171\">CI_Output::set_output<\/a>"],[0,1,"<a href=\"core\/Output.php.html#187\">CI_Output::append_output<\/a>"],[0,3,"<a href=\"core\/Output.php.html#207\">CI_Output::set_header<\/a>"],[0,6,"<a href=\"core\/Output.php.html#231\">CI_Output::set_content_type<\/a>"],[0,3,"<a href=\"core\/Output.php.html#270\">CI_Output::get_content_type<\/a>"],[0,5,"<a href=\"core\/Output.php.html#291\">CI_Output::get_header<\/a>"],[0,1,"<a href=\"core\/Output.php.html#328\">CI_Output::set_status_header<\/a>"],[0,2,"<a href=\"core\/Output.php.html#342\">CI_Output::enable_profiler<\/a>"],[0,3,"<a href=\"core\/Output.php.html#359\">CI_Output::set_profiler_sections<\/a>"],[0,2,"<a href=\"core\/Output.php.html#383\">CI_Output::cache<\/a>"],[0,21,"<a href=\"core\/Output.php.html#405\">CI_Output::_display<\/a>"],[0,13,"<a href=\"core\/Output.php.html#543\">CI_Output::_write_cache<\/a>"],[0,11,"<a href=\"core\/Output.php.html#642\">CI_Output::_display_cache<\/a>"],[0,7,"<a href=\"core\/Output.php.html#713\">CI_Output::delete_cache<\/a>"],[0,3,"<a href=\"core\/Output.php.html#761\">CI_Output::set_cache_header<\/a>"],[38.095238095238,6,"<a href=\"core\/Router.php.html#123\">CI_Router::__construct<\/a>"],[43.75,13,"<a href=\"core\/Router.php.html#163\">CI_Router::_set_routing<\/a>"],[60.869565217391,5,"<a href=\"core\/Router.php.html#249\">CI_Router::_set_request<\/a>"],[38.888888888889,4,"<a href=\"core\/Router.php.html#291\">CI_Router::_set_default_controller<\/a>"],[70,5,"<a href=\"core\/Router.php.html#333\">CI_Router::_validate_request<\/a>"],[51.351351351351,14,"<a href=\"core\/Router.php.html#366\">CI_Router::_parse_routes<\/a>"],[100,1,"<a href=\"core\/Router.php.html#446\">CI_Router::set_class<\/a>"],[100,1,"<a href=\"core\/Router.php.html#459\">CI_Router::fetch_class<\/a>"],[100,1,"<a href=\"core\/Router.php.html#472\">CI_Router::set_method<\/a>"],[100,1,"<a href=\"core\/Router.php.html#485\">CI_Router::fetch_method<\/a>"],[0,3,"<a href=\"core\/Router.php.html#499\">CI_Router::set_directory<\/a>"],[100,1,"<a href=\"core\/Router.php.html#522\">CI_Router::fetch_directory<\/a>"],[29.411764705882,5,"<a href=\"core\/Security.php.html#169\">CI_Security::__construct<\/a>"],[0,9,"<a href=\"core\/Security.php.html#205\">CI_Security::csrf_verify<\/a>"],[100,3,"<a href=\"core\/Security.php.html#259\">CI_Security::csrf_set_cookie<\/a>"],[0,1,"<a href=\"core\/Security.php.html#290\">CI_Security::csrf_show_error<\/a>"],[0,1,"<a href=\"core\/Security.php.html#303\">CI_Security::get_csrf_hash<\/a>"],[0,1,"<a href=\"core\/Security.php.html#316\">CI_Security::get_csrf_token_name<\/a>"],[0,11,"<a href=\"core\/Security.php.html#349\">CI_Security::xss_clean<\/a>"],[0,3,"<a href=\"core\/Security.php.html#549\">CI_Security::xss_hash<\/a>"],[0,10,"<a href=\"core\/Security.php.html#570\">CI_Security::get_random_bytes<\/a>"],[0,11,"<a href=\"core\/Security.php.html#623\">CI_Security::entity_decode<\/a>"],[0,3,"<a href=\"core\/Security.php.html#698\">CI_Security::sanitize_filename<\/a>"],[0,1,"<a href=\"core\/Security.php.html#728\">CI_Security::strip_image_tags<\/a>"],[0,1,"<a href=\"core\/Security.php.html#745\">CI_Security::_compact_exploded_words<\/a>"],[0,3,"<a href=\"core\/Security.php.html#773\">CI_Security::_remove_evil_attributes<\/a>"],[0,1,"<a href=\"core\/Security.php.html#813\">CI_Security::_sanitize_naughty_html<\/a>"],[0,1,"<a href=\"core\/Security.php.html#835\">CI_Security::_js_link_removal<\/a>"],[0,1,"<a href=\"core\/Security.php.html#860\">CI_Security::_js_img_removal<\/a>"],[0,1,"<a href=\"core\/Security.php.html#879\">CI_Security::_convert_attribute<\/a>"],[0,3,"<a href=\"core\/Security.php.html#896\">CI_Security::_filter_attributes<\/a>"],[0,1,"<a href=\"core\/Security.php.html#919\">CI_Security::_decode_entity<\/a>"],[0,2,"<a href=\"core\/Security.php.html#942\">CI_Security::_do_never_allowed<\/a>"],[0,6,"<a href=\"core\/Security.php.html#961\">CI_Security::_csrf_set_hash<\/a>"],[42.857142857143,10,"<a href=\"core\/URI.php.html#99\">CI_URI::__construct<\/a>"],[73.913043478261,6,"<a href=\"core\/URI.php.html#151\">CI_URI::_set_uri_string<\/a>"],[0,12,"<a href=\"core\/URI.php.html#197\">CI_URI::_parse_request_uri<\/a>"],[0,5,"<a href=\"core\/URI.php.html#253\">CI_URI::_parse_query_string<\/a>"],[100,2,"<a href=\"core\/URI.php.html#282\">CI_URI::_parse_argv<\/a>"],[0,5,"<a href=\"core\/URI.php.html#298\">CI_URI::_remove_relative_directory<\/a>"],[60,5,"<a href=\"core\/URI.php.html#324\">CI_URI::filter_uri<\/a>"],[0,2,"<a href=\"core\/URI.php.html#342\">CI_URI::segment<\/a>"],[0,2,"<a href=\"core\/URI.php.html#362\">CI_URI::rsegment<\/a>"],[0,1,"<a href=\"core\/URI.php.html#389\">CI_URI::uri_to_assoc<\/a>"],[0,1,"<a href=\"core\/URI.php.html#407\">CI_URI::ruri_to_assoc<\/a>"],[0,11,"<a href=\"core\/URI.php.html#426\">CI_URI::_uri_to_assoc<\/a>"],[0,2,"<a href=\"core\/URI.php.html#494\">CI_URI::assoc_to_uri<\/a>"],[0,1,"<a href=\"core\/URI.php.html#517\">CI_URI::slash_segment<\/a>"],[0,1,"<a href=\"core\/URI.php.html#533\">CI_URI::slash_rsegment<\/a>"],[0,3,"<a href=\"core\/URI.php.html#553\">CI_URI::_slash_segment<\/a>"],[0,1,"<a href=\"core\/URI.php.html#576\">CI_URI::segment_array<\/a>"],[0,1,"<a href=\"core\/URI.php.html#588\">CI_URI::rsegment_array<\/a>"],[0,1,"<a href=\"core\/URI.php.html#600\">CI_URI::total_segments<\/a>"],[0,1,"<a href=\"core\/URI.php.html#612\">CI_URI::total_rsegments<\/a>"],[0,1,"<a href=\"core\/URI.php.html#624\">CI_URI::uri_string<\/a>"],[0,1,"<a href=\"core\/URI.php.html#636\">CI_URI::ruri_string<\/a>"],[0,5,"<a href=\"core\/Utf8.php.html#60\">CI_Utf8::__construct<\/a>"],[0,4,"<a href=\"core\/Utf8.php.html#90\">CI_Utf8::clean_string<\/a>"],[0,1,"<a href=\"core\/Utf8.php.html#119\">CI_Utf8::safe_ascii_for_xml<\/a>"],[0,3,"<a href=\"core\/Utf8.php.html#135\">CI_Utf8::convert_to_utf8<\/a>"],[0,1,"<a href=\"core\/Utf8.php.html#159\">CI_Utf8::is_ascii<\/a>"],[100,3,"<a href=\"database\/DB_driver.php.html#365\">CI_DB_driver::__construct<\/a>"],[21.428571428571,10,"<a href=\"database\/DB_driver.php.html#385\">CI_DB_driver::initialize<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#456\">CI_DB_driver::db_connect<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#468\">CI_DB_driver::db_pconnect<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#486\">CI_DB_driver::reconnect<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#500\">CI_DB_driver::db_select<\/a>"],[33.333333333333,4,"<a href=\"database\/DB_driver.php.html#513\">CI_DB_driver::db_set_charset<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#537\">CI_DB_driver::platform<\/a>"],[0,4,"<a href=\"database\/DB_driver.php.html#552\">CI_DB_driver::version<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#575\">CI_DB_driver::_version<\/a>"],[0,25,"<a href=\"database\/DB_driver.php.html#596\">CI_DB_driver::query<\/a>"],[0,2,"<a href=\"database\/DB_driver.php.html#740\">CI_DB_driver::load_rdriver<\/a>"],[0,2,"<a href=\"database\/DB_driver.php.html#764\">CI_DB_driver::simple_query<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#782\">CI_DB_driver::trans_off<\/a>"],[0,2,"<a href=\"database\/DB_driver.php.html#799\">CI_DB_driver::trans_strict<\/a>"],[0,3,"<a href=\"database\/DB_driver.php.html#812\">CI_DB_driver::trans_start<\/a>"],[0,6,"<a href=\"database\/DB_driver.php.html#837\">CI_DB_driver::trans_complete<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#883\">CI_DB_driver::trans_status<\/a>"],[0,10,"<a href=\"database\/DB_driver.php.html#897\">CI_DB_driver::compile_binds<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#961\">CI_DB_driver::is_write_type<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#974\">CI_DB_driver::elapsed_time<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#986\">CI_DB_driver::total_queries<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#998\">CI_DB_driver::last_query<\/a>"],[0,8,"<a href=\"database\/DB_driver.php.html#1014\">CI_DB_driver::escape<\/a>"],[0,4,"<a href=\"database\/DB_driver.php.html#1046\">CI_DB_driver::escape_str<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#1084\">CI_DB_driver::escape_like_str<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#1097\">CI_DB_driver::_escape_str<\/a>"],[0,2,"<a href=\"database\/DB_driver.php.html#1113\">CI_DB_driver::primary<\/a>"],[0,3,"<a href=\"database\/DB_driver.php.html#1130\">CI_DB_driver::count_all<\/a>"],[0,8,"<a href=\"database\/DB_driver.php.html#1156\">CI_DB_driver::list_tables<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#1211\">CI_DB_driver::table_exists<\/a>"],[0,8,"<a href=\"database\/DB_driver.php.html#1224\">CI_DB_driver::list_fields<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#1275\">CI_DB_driver::field_exists<\/a>"],[0,2,"<a href=\"database\/DB_driver.php.html#1288\">CI_DB_driver::field_data<\/a>"],[0,15,"<a href=\"database\/DB_driver.php.html#1304\">CI_DB_driver::escape_identifiers<\/a>"],[0,2,"<a href=\"database\/DB_driver.php.html#1365\">CI_DB_driver::insert_string<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#1390\">CI_DB_driver::_insert<\/a>"],[0,3,"<a href=\"database\/DB_driver.php.html#1405\">CI_DB_driver::update_string<\/a>"],[0,3,"<a href=\"database\/DB_driver.php.html#1436\">CI_DB_driver::_update<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#1457\">CI_DB_driver::_has_operator<\/a>"],[0,4,"<a href=\"database\/DB_driver.php.html#1470\">CI_DB_driver::_get_operator<\/a>"],[0,6,"<a href=\"database\/DB_driver.php.html#1508\">CI_DB_driver::call_function<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#1535\">CI_DB_driver::cache_set_path<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#1547\">CI_DB_driver::cache_on<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#1559\">CI_DB_driver::cache_off<\/a>"],[0,2,"<a href=\"database\/DB_driver.php.html#1573\">CI_DB_driver::cache_delete<\/a>"],[0,2,"<a href=\"database\/DB_driver.php.html#1587\">CI_DB_driver::cache_delete_all<\/a>"],[0,3,"<a href=\"database\/DB_driver.php.html#1601\">CI_DB_driver::_cache_init<\/a>"],[100,2,"<a href=\"database\/DB_driver.php.html#1623\">CI_DB_driver::close<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#1641\">CI_DB_driver::_close<\/a>"],[0,8,"<a href=\"database\/DB_driver.php.html#1656\">CI_DB_driver::display_error<\/a>"],[0,30,"<a href=\"database\/DB_driver.php.html#1729\">CI_DB_driver::protect_identifiers<\/a>"],[0,1,"<a href=\"database\/DB_driver.php.html#1895\">CI_DB_driver::_reset_select<\/a>"],[0,6,"<a href=\"database\/DB_query_builder.php.html#270\">CI_DB_query_builder::select<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#312\">CI_DB_query_builder::select_max<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#328\">CI_DB_query_builder::select_min<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#344\">CI_DB_query_builder::select_avg<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#360\">CI_DB_query_builder::select_sum<\/a>"],[0,6,"<a href=\"database\/DB_query_builder.php.html#380\">CI_DB_query_builder::_max_min_avg_sum<\/a>"],[0,2,"<a href=\"database\/DB_query_builder.php.html#421\">CI_DB_query_builder::_create_alias_from_table<\/a>"],[0,2,"<a href=\"database\/DB_query_builder.php.html#442\">CI_DB_query_builder::distinct<\/a>"],[0,6,"<a href=\"database\/DB_query_builder.php.html#458\">CI_DB_query_builder::from<\/a>"],[0,14,"<a href=\"database\/DB_query_builder.php.html#512\">CI_DB_query_builder::join<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#600\">CI_DB_query_builder::where<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#618\">CI_DB_query_builder::or_where<\/a>"],[0,14,"<a href=\"database\/DB_query_builder.php.html#640\">CI_DB_query_builder::_wh<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#705\">CI_DB_query_builder::where_in<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#723\">CI_DB_query_builder::or_where_in<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#741\">CI_DB_query_builder::where_not_in<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#759\">CI_DB_query_builder::or_where_not_in<\/a>"],[0,9,"<a href=\"database\/DB_query_builder.php.html#781\">CI_DB_query_builder::_where_in<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#833\">CI_DB_query_builder::like<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#852\">CI_DB_query_builder::not_like<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#871\">CI_DB_query_builder::or_like<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#890\">CI_DB_query_builder::or_not_like<\/a>"],[0,11,"<a href=\"database\/DB_query_builder.php.html#913\">CI_DB_query_builder::_like<\/a>"],[0,4,"<a href=\"database\/DB_query_builder.php.html#972\">CI_DB_query_builder::group_start<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#999\">CI_DB_query_builder::or_group_start<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#1011\">CI_DB_query_builder::not_group_start<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#1023\">CI_DB_query_builder::or_not_group_start<\/a>"],[0,2,"<a href=\"database\/DB_query_builder.php.html#1035\">CI_DB_query_builder::group_end<\/a>"],[0,2,"<a href=\"database\/DB_query_builder.php.html#1065\">CI_DB_query_builder::_group_get_type<\/a>"],[0,7,"<a href=\"database\/DB_query_builder.php.html#1085\">CI_DB_query_builder::group_by<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#1128\">CI_DB_query_builder::having<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#1145\">CI_DB_query_builder::or_having<\/a>"],[0,12,"<a href=\"database\/DB_query_builder.php.html#1160\">CI_DB_query_builder::order_by<\/a>"],[0,3,"<a href=\"database\/DB_query_builder.php.html#1218\">CI_DB_query_builder::limit<\/a>"],[0,2,"<a href=\"database\/DB_query_builder.php.html#1234\">CI_DB_query_builder::offset<\/a>"],[0,2,"<a href=\"database\/DB_query_builder.php.html#1250\">CI_DB_query_builder::_limit<\/a>"],[0,5,"<a href=\"database\/DB_query_builder.php.html#1267\">CI_DB_query_builder::set<\/a>"],[0,3,"<a href=\"database\/DB_query_builder.php.html#1298\">CI_DB_query_builder::get_compiled_select<\/a>"],[0,3,"<a href=\"database\/DB_query_builder.php.html#1329\">CI_DB_query_builder::get<\/a>"],[0,5,"<a href=\"database\/DB_query_builder.php.html#1359\">CI_DB_query_builder::count_all_results<\/a>"],[0,4,"<a href=\"database\/DB_query_builder.php.html#1398\">CI_DB_query_builder::get_where<\/a>"],[0,8,"<a href=\"database\/DB_query_builder.php.html#1432\">CI_DB_query_builder::insert_batch<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#1479\">CI_DB_query_builder::_insert_batch<\/a>"],[0,9,"<a href=\"database\/DB_query_builder.php.html#1494\">CI_DB_query_builder::set_insert_batch<\/a>"],[0,3,"<a href=\"database\/DB_query_builder.php.html#1553\">CI_DB_query_builder::get_compiled_insert<\/a>"],[0,3,"<a href=\"database\/DB_query_builder.php.html#1588\">CI_DB_query_builder::insert<\/a>"],[0,6,"<a href=\"database\/DB_query_builder.php.html#1624\">CI_DB_query_builder::_validate_insert<\/a>"],[0,7,"<a href=\"database\/DB_query_builder.php.html#1654\">CI_DB_query_builder::replace<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#1694\">CI_DB_query_builder::_replace<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#1711\">CI_DB_query_builder::_from_tables<\/a>"],[0,3,"<a href=\"database\/DB_query_builder.php.html#1727\">CI_DB_query_builder::get_compiled_update<\/a>"],[0,5,"<a href=\"database\/DB_query_builder.php.html#1760\">CI_DB_query_builder::update<\/a>"],[0,6,"<a href=\"database\/DB_query_builder.php.html#1802\">CI_DB_query_builder::_validate_update<\/a>"],[0,10,"<a href=\"database\/DB_query_builder.php.html#1833\">CI_DB_query_builder::update_batch<\/a>"],[0,5,"<a href=\"database\/DB_query_builder.php.html#1888\">CI_DB_query_builder::_update_batch<\/a>"],[0,8,"<a href=\"database\/DB_query_builder.php.html#1927\">CI_DB_query_builder::set_update_batch<\/a>"],[0,4,"<a href=\"database\/DB_query_builder.php.html#1973\">CI_DB_query_builder::empty_table<\/a>"],[0,4,"<a href=\"database\/DB_query_builder.php.html#2006\">CI_DB_query_builder::truncate<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#2040\">CI_DB_query_builder::_truncate<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#2056\">CI_DB_query_builder::get_compiled_delete<\/a>"],[0,12,"<a href=\"database\/DB_query_builder.php.html#2077\">CI_DB_query_builder::delete<\/a>"],[0,2,"<a href=\"database\/DB_query_builder.php.html#2138\">CI_DB_query_builder::_delete<\/a>"],[0,2,"<a href=\"database\/DB_query_builder.php.html#2154\">CI_DB_query_builder::dbprefix<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#2174\">CI_DB_query_builder::set_dbprefix<\/a>"],[0,6,"<a href=\"database\/DB_query_builder.php.html#2189\">CI_DB_query_builder::_track_aliases<\/a>"],[0,9,"<a href=\"database\/DB_query_builder.php.html#2235\">CI_DB_query_builder::_compile_select<\/a>"],[0,11,"<a href=\"database\/DB_query_builder.php.html#2308\">CI_DB_query_builder::_compile_wh<\/a>"],[0,6,"<a href=\"database\/DB_query_builder.php.html#2383\">CI_DB_query_builder::_compile_group_by<\/a>"],[0,7,"<a href=\"database\/DB_query_builder.php.html#2419\">CI_DB_query_builder::_compile_order_by<\/a>"],[0,6,"<a href=\"database\/DB_query_builder.php.html#2453\">CI_DB_query_builder::_object_to_array<\/a>"],[0,5,"<a href=\"database\/DB_query_builder.php.html#2483\">CI_DB_query_builder::_object_to_array_batch<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#2519\">CI_DB_query_builder::start_cache<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#2534\">CI_DB_query_builder::stop_cache<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#2549\">CI_DB_query_builder::flush_cache<\/a>"],[0,10,"<a href=\"database\/DB_query_builder.php.html#2577\">CI_DB_query_builder::_merge_cache<\/a>"],[0,7,"<a href=\"database\/DB_query_builder.php.html#2631\">CI_DB_query_builder::_is_literal<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#2660\">CI_DB_query_builder::reset_query<\/a>"],[0,2,"<a href=\"database\/DB_query_builder.php.html#2675\">CI_DB_query_builder::_reset_run<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#2690\">CI_DB_query_builder::_reset_select<\/a>"],[0,1,"<a href=\"database\/DB_query_builder.php.html#2717\">CI_DB_query_builder::_reset_write<\/a>"],[68.421052631579,8,"<a href=\"database\/drivers\/mysqli\/mysqli_driver.php.html#107\">CI_DB_mysqli_driver::db_connect<\/a>"],[0,3,"<a href=\"database\/drivers\/mysqli\/mysqli_driver.php.html#149\">CI_DB_mysqli_driver::reconnect<\/a>"],[0,3,"<a href=\"database\/drivers\/mysqli\/mysqli_driver.php.html#165\">CI_DB_mysqli_driver::db_select<\/a>"],[100,1,"<a href=\"database\/drivers\/mysqli\/mysqli_driver.php.html#189\">CI_DB_mysqli_driver::_db_set_charset<\/a>"],[0,2,"<a href=\"database\/drivers\/mysqli\/mysqli_driver.php.html#201\">CI_DB_mysqli_driver::version<\/a>"],[0,1,"<a href=\"database\/drivers\/mysqli\/mysqli_driver.php.html#219\">CI_DB_mysqli_driver::_execute<\/a>"],[0,3,"<a href=\"database\/drivers\/mysqli\/mysqli_driver.php.html#234\">CI_DB_mysqli_driver::_prep_query<\/a>"],[0,4,"<a href=\"database\/drivers\/mysqli\/mysqli_driver.php.html#254\">CI_DB_mysqli_driver::trans_begin<\/a>"],[0,4,"<a href=\"database\/drivers\/mysqli\/mysqli_driver.php.html#280\">CI_DB_mysqli_driver::trans_commit<\/a>"],[0,4,"<a href=\"database\/drivers\/mysqli\/mysqli_driver.php.html#304\">CI_DB_mysqli_driver::trans_rollback<\/a>"],[0,1,"<a href=\"database\/drivers\/mysqli\/mysqli_driver.php.html#329\">CI_DB_mysqli_driver::_escape_str<\/a>"],[0,1,"<a href=\"database\/drivers\/mysqli\/mysqli_driver.php.html#341\">CI_DB_mysqli_driver::affected_rows<\/a>"],[0,1,"<a href=\"database\/drivers\/mysqli\/mysqli_driver.php.html#353\">CI_DB_mysqli_driver::insert_id<\/a>"],[0,3,"<a href=\"database\/drivers\/mysqli\/mysqli_driver.php.html#368\">CI_DB_mysqli_driver::_list_tables<\/a>"],[0,1,"<a href=\"database\/drivers\/mysqli\/mysqli_driver.php.html#390\">CI_DB_mysqli_driver::_list_columns<\/a>"],[0,3,"<a href=\"database\/drivers\/mysqli\/mysqli_driver.php.html#403\">CI_DB_mysqli_driver::field_data<\/a>"],[0,3,"<a href=\"database\/drivers\/mysqli\/mysqli_driver.php.html#439\">CI_DB_mysqli_driver::error<\/a>"],[0,3,"<a href=\"database\/drivers\/mysqli\/mysqli_driver.php.html#462\">CI_DB_mysqli_driver::_from_tables<\/a>"],[100,1,"<a href=\"database\/drivers\/mysqli\/mysqli_driver.php.html#479\">CI_DB_mysqli_driver::_close<\/a>"],[5.4794520547945,19,"<a href=\"libraries\/Session\/Session.php.html#69\">CI_Session::__construct<\/a>"],[0,16,"<a href=\"libraries\/Session\/Session.php.html#188\">CI_Session::_ci_load_classes<\/a>"],[0,12,"<a href=\"libraries\/Session\/Session.php.html#260\">CI_Session::_configure<\/a>"],[0,6,"<a href=\"libraries\/Session\/Session.php.html#331\">CI_Session::_ci_init_vars<\/a>"],[0,6,"<a href=\"libraries\/Session\/Session.php.html#368\">CI_Session::mark_as_flash<\/a>"],[0,4,"<a href=\"libraries\/Session\/Session.php.html#405\">CI_Session::get_flash_keys<\/a>"],[0,7,"<a href=\"libraries\/Session\/Session.php.html#429\">CI_Session::unmark_flash<\/a>"],[0,7,"<a href=\"libraries\/Session\/Session.php.html#461\">CI_Session::mark_as_temp<\/a>"],[0,4,"<a href=\"libraries\/Session\/Session.php.html#513\">CI_Session::get_temp_keys<\/a>"],[0,7,"<a href=\"libraries\/Session\/Session.php.html#537\">CI_Session::unmark_temp<\/a>"],[0,3,"<a href=\"libraries\/Session\/Session.php.html#568\">CI_Session::__get<\/a>"],[0,1,"<a href=\"libraries\/Session\/Session.php.html#593\">CI_Session::__set<\/a>"],[0,1,"<a href=\"libraries\/Session\/Session.php.html#607\">CI_Session::sess_destroy<\/a>"],[0,1,"<a href=\"libraries\/Session\/Session.php.html#622\">CI_Session::sess_regenerate<\/a>"],[0,1,"<a href=\"libraries\/Session\/Session.php.html#637\">CI_Session::get_userdata<\/a>"],[0,6,"<a href=\"libraries\/Session\/Session.php.html#652\">CI_Session::userdata<\/a>"],[0,3,"<a href=\"libraries\/Session\/Session.php.html#692\">CI_Session::set_userdata<\/a>"],[0,3,"<a href=\"libraries\/Session\/Session.php.html#717\">CI_Session::unset_userdata<\/a>"],[0,1,"<a href=\"libraries\/Session\/Session.php.html#741\">CI_Session::all_userdata<\/a>"],[0,1,"<a href=\"libraries\/Session\/Session.php.html#756\">CI_Session::has_userdata<\/a>"],[0,7,"<a href=\"libraries\/Session\/Session.php.html#771\">CI_Session::flashdata<\/a>"],[0,2,"<a href=\"libraries\/Session\/Session.php.html#804\">CI_Session::set_flashdata<\/a>"],[0,1,"<a href=\"libraries\/Session\/Session.php.html#820\">CI_Session::keep_flashdata<\/a>"],[0,7,"<a href=\"libraries\/Session\/Session.php.html#835\">CI_Session::tempdata<\/a>"],[0,2,"<a href=\"libraries\/Session\/Session.php.html#869\">CI_Session::set_tempdata<\/a>"],[0,1,"<a href=\"libraries\/Session\/Session.php.html#885\">CI_Session::unset_tempdata<\/a>"],[0,1,"<a href=\"libraries\/Unit_test.php.html#112\">CI_Unit_test::__construct<\/a>"],[0,3,"<a href=\"libraries\/Unit_test.php.html#127\">CI_Unit_test::set_test_items<\/a>"],[0,5,"<a href=\"libraries\/Unit_test.php.html#148\">CI_Unit_test::run<\/a>"],[0,7,"<a href=\"libraries\/Unit_test.php.html#194\">CI_Unit_test::report<\/a>"],[0,1,"<a href=\"libraries\/Unit_test.php.html#244\">CI_Unit_test::use_strict<\/a>"],[0,1,"<a href=\"libraries\/Unit_test.php.html#259\">CI_Unit_test::active<\/a>"],[0,6,"<a href=\"libraries\/Unit_test.php.html#274\">CI_Unit_test::result<\/a>"],[0,1,"<a href=\"libraries\/Unit_test.php.html#319\">CI_Unit_test::set_template<\/a>"],[0,3,"<a href=\"libraries\/Unit_test.php.html#333\">CI_Unit_test::_backtrace<\/a>"],[0,1,"<a href=\"libraries\/Unit_test.php.html#349\">CI_Unit_test::_default_template<\/a>"],[0,4,"<a href=\"libraries\/Unit_test.php.html#366\">CI_Unit_test::_parse_template<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

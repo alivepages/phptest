@@ -1,0 +1,10 @@
+php_value memory_limit 254M
+php_value upload_max_filesize 50M
+php_value post_max_size 50M
+php_value max_execution_time 1000
+php_value max_input_time 1000
+
+Options -Indexes
+RewriteEngine on
+RewriteCond $1 !^(index\.php|img|flash|fonts|bootstrap|css|v2|v3|js|robots\.txt|googleaf6fd2652e4702cd\.html|pinterest-7480c\.html)
+RewriteRule ^(.*)$ /index.php/$1 [L]

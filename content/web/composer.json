@@ -1,0 +1,28 @@
+{
+  "name": "kichink/api",
+  "description": "Api kichink",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Kichink",
+      "email": "contacto@kichink.com"
+    }
+  ],
+  "config": {
+    "vendor-dir": "application/vendor"
+  },
+  "require": {
+    "firebase/php-jwt": "2.0.0",
+    "conekta/conekta-php": "1.9.9",
+    "openpay/sdk": "1.0.4",
+    "stripe/stripe-php": "3.*"
+  },
+  "require-dev": {
+    "phpmd/phpmd": "2.2.3",
+    "squizlabs/php_codesniffer": "3.0.x-dev",
+    "kenjis/ci-phpunit-test": "^0.12.0",
+    "phpunit/phpunit": "5.7.*"
+  }
+}
+

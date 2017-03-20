@@ -1,0 +1,392 @@
+# Example YAML to get you started quickly.
+# Be aware that YAML has indentation based scoping.
+# Code completion support is available so start typing for available options.
+swagger: '2.0'
+
+# This is your document metadata
+info:
+  version: "2.0.0"
+  title: Kontrol API User permissions
+host: api.alpha.kichink.com
+schemes:
+  - http
+consumes:
+  - application/x-www-form-urlencoded
+
+# Describe your paths here
+paths:
+  # This is a path endpoint. Change it.
+  /kontrol/user/permissions:
+    # This is a HTTP operation
+    get:
+      summary: user profile
+      # Describe this verb here. Note: you can use markdown
+      description: |
+        Return user profile.
+      tags:
+        - Permissions
+      # This is array of GET operation parameters:
+      parameters:
+        -
+          name: X-API-KEY
+          in: header
+          description: json web token
+          required: true
+          type: string
+        -
+          name: X-STORE-ID
+          in: header
+          description: store id used
+          required: true
+          type: string
+      # Expected responses for this operation:
+      responses:
+        # Response code
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            type: object
+            properties:
+              permissions:
+                type: object
+                properties:
+                  APPS:
+                    type: boolean
+                    description: permiso para modulo de apps
+                  AUTH:
+                    type: boolean
+                    description: permiso para auth
+                  CHECKOUT:
+                    type: boolean
+                    description: permiso para checkout
+                  ITEMS:
+                    type: boolean
+                    description: permiso para modulo de items
+                  LISTS:
+                    type: boolean
+                    description: permiso para lista de items
+                  ORDERS:
+                    type: boolean
+                    description: permiso para modulo de ordenes
+                  PAYMENTS:
+                    type: boolean
+                    description: permiso para modulo de pagos
+                  PROMOTIONS:
+                    type: boolean
+                    description: permiso para modulo de promociones
+                  STORES:
+                    type: boolean
+                    description: permiso para modulo de ajustes de tienda
+                  SUPPORT:
+                    type: boolean
+                    description: permisos para suporte
+                  ZENDDESK:
+                    type: boolean
+                    description: permisos para zenddesk
+              function:
+                type: string
+                description: the call path
+              result_count:
+                type: string
+                description: the count result
+              response_time:
+                type: string
+                description: the response time
+              status:
+                type: string
+                description: the status
+              http_code:
+                type: string
+                description: the http code
+
+  /kontrol/user/auth:
+    # This is a HTTP operation
+    post:
+      summary: Gets user atuhentication.
+      # Describe this verb here. Note: you can use markdown
+      description: |
+        Gets `User` atuhentication.
+      # This is array of GET operation parameters:
+      tags:
+        - Auth
+      parameters:
+        # An example parameter that is in query and is required
+        -
+          name: username
+          in: formData
+          description: The username
+          required: true
+          type: string
+        -
+          name: password
+          in: formData
+          description: The password
+          required: true
+          type: string
+      # Expected responses for this operation:
+      responses:
+        # Response code
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                properties:
+                  key:
+                    type: string
+                    description: jwt token
+                  store_id:
+                    type: string
+                    description: The  favorite or last used by the user. This field have a value if the user is store admin, by the other way if the user don't have admin store permissions, the  will be empty
+              function:
+                type: string
+                description: the call path
+              result_count:
+                type: string
+                description: the count result
+              response_time:
+                type: string
+                description: the response time
+              status:
+                type: string
+                description: the status
+              http_code:
+                type: string
+                description: the http code
+
+  /kontrol/user/logout:
+      # This is a HTTP operation
+      get:
+        summary: Get logout user
+        # Describe this verb here. Note: you can use markdown
+        description: |
+          Return user profile.
+        tags:
+          - Logout
+        # This is array of GET operation parameters:
+        parameters:
+          -
+            name: X-API-KEY
+            in: header
+            description: json web token
+            required: true
+            type: string
+        # Expected responses for this operation:
+        responses:
+          # Response code
+          200:
+            description: Successful response
+            # A schema describing your response object.
+            # Use JSON Schema format
+            schema:
+              type: object
+              properties:
+                data:
+                  type: string
+                function:
+                  type: string
+                  description: the call path
+                result_count:
+                  type: string
+                  description: the count result
+                response_time:
+                  type: string
+                  description: the response time
+                status:
+                  type: string
+                  description: the status
+                http_code:
+                  type: string
+                  description: the http code
+
+  /kontrol/user/me:
+        # This is a HTTP operation
+        get:
+          summary: user profile
+          # Describe this verb here. Note: you can use markdown
+          description: |
+            Return user profile.
+          tags:
+            - Profile
+          # This is array of GET operation parameters:
+          parameters:
+            -
+              name: X-API-KEY
+              in: header
+              description: json web token
+              required: true
+              type: string
+            -
+              name: X-STORE-ID
+              in: header
+              description: store id used
+              required: true
+              type: string
+          # Expected responses for this operation:
+          responses:
+            # Response code
+            200:
+              description: Successful response
+              # A schema describing your response object.
+              # Use JSON Schema format
+              schema:
+                type: object
+                properties:
+                  me:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        description: user id
+                      name:
+                        type: array
+                        items:
+                          type: string
+                        description: name and lastname
+                      email:
+                        type: string
+                        description: the email user
+                      telefono:
+                        type: string
+                        description: the phone
+                      language:
+                        type: string
+                        description: default language or the user (es, en)
+                      currency:
+                        type: string
+                        description: default currency for the user
+                      favoriteStore:
+                        type: string
+                        description: favorite store
+                      kontrol:
+                        type: string
+                        description: if the user use kontrol new this variable is equal to 1
+                  function:
+                    type: string
+                    description: the call path
+                  result_count:
+                    type: string
+                    description: the count result
+                  response_time:
+                    type: string
+                    description: the response time
+                  status:
+                    type: string
+                    description: the status
+                  http_code:
+                    type: string
+                    description: the http code
+
+  /kontrol/user/profile/update/password:
+      # This is a HTTP operation
+      post:
+        summary: Update Password
+        # Describe this verb here. Note: you can use markdown
+        description: |
+          Return user profile.
+        tags:
+          - Update_password
+        # This is array of GET operation parameters:
+        parameters:
+          -
+            name: X-API-KEY
+            in: header
+            description: json web token
+            required: true
+            type: string
+          -
+            name: password
+            in: formData
+            description: The password
+            required: true
+            type: string
+          -
+            name: password2
+            in: formData
+            description: The password
+            required: true
+            type: string
+          -
+            name: current_password
+            in: formData
+            description: The username
+            required: true
+            type: string
+        # Expected responses for this operation:
+        responses:
+          # Response code
+          200:
+            description: Successful response
+            # A schema describing your response object.
+            # Use JSON Schema format
+            schema:
+              type: object
+              properties:
+                data:
+                  type: string
+                function:
+                  type: string
+                  description: the call path
+                result_count:
+                  type: string
+                  description: the count result
+                response_time:
+                  type: string
+                  description: the response time
+                status:
+                  type: string
+                  description: the status
+                http_code:
+                  type: string
+                  description: the http code
+
+  /kontrol/user/auth:
+      # This is a HTTP operation
+      get:
+        summary: Update Password
+        # Describe this verb here. Note: you can use markdown
+        description: |
+          Return user profile.
+        tags:
+          - User profile
+        # This is array of GET operation parameters:
+        parameters:
+          -
+            name: X-API-KEY
+            in: header
+            description: json web token
+            required: true
+            type: string
+        # Expected responses for this operation:
+        responses:
+          # Response code
+          200:
+            description: Successful response
+            # A schema describing your response object.
+            # Use JSON Schema format
+            schema:
+              type: object
+              properties:
+                data:
+                  type: string
+                function:
+                  type: string
+                  description: the call path
+                result_count:
+                  type: string
+                  description: the count result
+                response_time:
+                  type: string
+                  description: the response time
+                status:
+                  type: string
+                  description: the status
+                http_code:
+                  type: string
+                  description: the http code

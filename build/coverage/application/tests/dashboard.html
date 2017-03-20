@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /Users/joel/GitHub/apitest/content/web/application/tests</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../css/nv.d3.min.css" rel="stylesheet">
+  <link href="../../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../../js/html5shiv.min.js"></script>
+  <script src="../../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../../index.html">/Users/joel/GitHub/apitest/content/web</a></li>
+        <li><a href="../index.html">application</a></li>
+        <li><a href="index.html">tests</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestNullCodeIgniter.php.html#14">CIPHPUnitTestNullCodeIgniter</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#51">CI_Input</a></td><td class="text-right">11%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestFileCache.php.html#11">CIPHPUnitTestFileCache</a></td><td class="text-right">12%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestAutoloader.php.html#11">CIPHPUnitTestAutoloader</a></td><td class="text-right">13%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTest.php.html#11">CIPHPUnitTest</a></td><td class="text-right">16%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#11">CIPHPUnitTestRequest</a></td><td class="text-right">26%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#51">CI_Loader</a></td><td class="text-right">45%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRouter.php.html#11">CIPHPUnitTestRouter</a></td><td class="text-right">47%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestSuperGlobal.php.html#11">CIPHPUnitTestSuperGlobal</a></td><td class="text-right">60%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#51">CI_Input</a></td><td class="text-right">8348</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#51">CI_Loader</a></td><td class="text-right">4797</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#11">CIPHPUnitTestRequest</a></td><td class="text-right">528</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestAutoloader.php.html#11">CIPHPUnitTestAutoloader</a></td><td class="text-right">360</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTest.php.html#11">CIPHPUnitTest</a></td><td class="text-right">147</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestFileCache.php.html#11">CIPHPUnitTestFileCache</a></td><td class="text-right">108</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestSuperGlobal.php.html#11">CIPHPUnitTestSuperGlobal</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRouter.php.html#11">CIPHPUnitTestRouter</a></td><td class="text-right">28</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#599"><abbr title="CI_Input::user_agent">user_agent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#574"><abbr title="CI_Input::valid_ip">valid_ip</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#437"><abbr title="CI_Input::ip_address">ip_address</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#685"><abbr title="CI_Input::_clean_input_data">_clean_input_data</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#740"><abbr title="CI_Input::_clean_input_keys">_clean_input_keys</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#851"><abbr title="CI_Input::is_ajax_request">is_ajax_request</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#817"><abbr title="CI_Input::get_request_header">get_request_header</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#773"><abbr title="CI_Input::request_headers">request_headers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#364"><abbr title="CI_Input::set_cookie">set_cookie</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#330"><abbr title="CI_Input::input_stream">input_stream</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTest.php.html#21"><abbr title="CIPHPUnitTest::init">init</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#240"><abbr title="CI_Input::get">get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#177"><abbr title="CI_Input::_fetch_from_array">_fetch_from_array</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#268"><abbr title="CI_Input::post_get">post_get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#284"><abbr title="CI_Input::get_post">get_post</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#314"><abbr title="CI_Input::server">server</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#300"><abbr title="CI_Input::cookie">cookie</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#882"><abbr title="CI_Input::method">method</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#899"><abbr title="CI_Input::__get">__get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#700"><abbr title="CI_Loader::config">config</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#681"><abbr title="CI_Loader::language">language</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#665"><abbr title="CI_Loader::helpers">helpers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#775"><abbr title="CI_Loader::add_package_path">add_package_path</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#819"><abbr title="CI_Loader::remove_package_path">remove_package_path</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#1393"><abbr title="CI_Loader::_ci_object_to_array">_ci_object_to_array</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#878"><abbr title="CI_Loader::_ci_load">_ci_load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#581"><abbr title="CI_Loader::get_vars">get_vars</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#567"><abbr title="CI_Loader::get_var">get_var</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#440"><abbr title="CI_Loader::dbforge">dbforge</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#408"><abbr title="CI_Loader::dbutil">dbutil</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#172"><abbr title="CI_Loader::is_loaded">is_loaded</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#489"><abbr title="CI_Loader::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#503"><abbr title="CI_Loader::file">file</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#551"><abbr title="CI_Loader::clear_vars">clear_vars</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#522"><abbr title="CI_Loader::vars">vars</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestSuperGlobal.php.html#106"><abbr title="CIPHPUnitTestSuperGlobal::set_SERVER_HttpHeader">set_SERVER_HttpHeader</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#254"><abbr title="CI_Input::post">post</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestFileCache.php.html#60"><abbr title="CIPHPUnitTestFileCache::offsetSet">offsetSet</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestFileCache.php.html#43"><abbr title="CIPHPUnitTestFileCache::__destruct">__destruct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestFileCache.php.html#16"><abbr title="CIPHPUnitTestFileCache::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestFileCache.php.html#82"><abbr title="CIPHPUnitTestFileCache::offsetUnset">offsetUnset</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestNullCodeIgniter.php.html#16"><abbr title="CIPHPUnitTestNullCodeIgniter::__get">__get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#65"><abbr title="CIPHPUnitTestRequest::setCallable">setCallable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#55"><abbr title="CIPHPUnitTestRequest::setHeader">setHeader</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestAutoloader.php.html#130"><abbr title="CIPHPUnitTestAutoloader::loadClassFile">loadClassFile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestAutoloader.php.html#96"><abbr title="CIPHPUnitTestAutoloader::loadApplicationClass">loadApplicationClass</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTest.php.html#138"><abbr title="CIPHPUnitTest::replaceHelpers">replaceHelpers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTest.php.html#122"><abbr title="CIPHPUnitTest::replaceLoader">replaceLoader</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTest.php.html#117"><abbr title="CIPHPUnitTest::getAutoloadDirs">getAutoloadDirs</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTest.php.html#148"><abbr title="CIPHPUnitTest::setPatcherCacheDir">setPatcherCacheDir</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestAutoloader.php.html#32"><abbr title="CIPHPUnitTestAutoloader::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestAutoloader.php.html#77"><abbr title="CIPHPUnitTestAutoloader::loadCIPHPUnitTestClass">loadCIPHPUnitTestClass</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestAutoloader.php.html#68"><abbr title="CIPHPUnitTestAutoloader::loadCIPHPUnitTestAliasClass">loadCIPHPUnitTestAliasClass</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#76"><abbr title="CIPHPUnitTestRequest::addCallable">addCallable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestFileCache.php.html#53"><abbr title="CIPHPUnitTestFileCache::dump">dump</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#184"><abbr title="CIPHPUnitTestRequest::callControllerMethod">callControllerMethod</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#268"><abbr title="CIPHPUnitTestRequest::callHook">callHook</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#106"><abbr title="CIPHPUnitTestRequest::enableHooks">enableHooks</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#291"><abbr title="CIPHPUnitTestRequest::createAndCallController">createAndCallController</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#86"><abbr title="CIPHPUnitTestRequest::setCallablePreConstructor">setCallablePreConstructor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#97"><abbr title="CIPHPUnitTestRequest::addCallablePreConstructor">addCallablePreConstructor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#719"><abbr title="CI_Loader::driver">driver</abbr></a></td><td class="text-right">23%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#278"><abbr title="CIPHPUnitTestRequest::setRawInputStream">setRawInputStream</abbr></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRouter.php.html#20"><abbr title="CIPHPUnitTestRouter::getRoute">getRoute</abbr></a></td><td class="text-right">47%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestAutoloader.php.html#53"><abbr title="CIPHPUnitTestAutoloader::load">load</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#119"><abbr title="CIPHPUnitTestRequest::request">request</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#1121"><abbr title="CI_Loader::_ci_load_stock_library">_ci_load_stock_library</abbr></a></td><td class="text-right">55%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestSuperGlobal.php.html#56"><abbr title="CIPHPUnitTestSuperGlobal::set_SERVER_REQUEST_URI">set_SERVER_REQUEST_URI</abbr></a></td><td class="text-right">56%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#1211"><abbr title="CI_Loader::_ci_init_library">_ci_init_library</abbr></a></td><td class="text-right">59%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#594"><abbr title="CI_Loader::helper">helper</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#617"><abbr title="CI_Input::_sanitize_globals">_sanitize_globals</abbr></a></td><td class="text-right">64%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#236"><abbr title="CI_Loader::model">model</abbr></a></td><td class="text-right">65%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#1025"><abbr title="CI_Loader::_ci_load_library">_ci_load_library</abbr></a></td><td class="text-right">65%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestAutoloader.php.html#146"><abbr title="CIPHPUnitTestAutoloader::loadFromCache">loadFromCache</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTest.php.html#94"><abbr title="CIPHPUnitTest::createCodeIgniterInstance">createCodeIgniterInstance</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestSuperGlobal.php.html#29"><abbr title="CIPHPUnitTestSuperGlobal::set_GET">set_GET</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTest.php.html#107"><abbr title="CIPHPUnitTest::wiredesignzHmvcInstalled">wiredesignzHmvcInstalled</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestSuperGlobal.php.html#18"><abbr title="CIPHPUnitTestSuperGlobal::set_POST">set_POST</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestFileCache.php.html#65"><abbr title="CIPHPUnitTestFileCache::offsetGet">offsetGet</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#236"><abbr title="CIPHPUnitTestRequest::requestUri">requestUri</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#190"><abbr title="CI_Loader::library">library</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#356"><abbr title="CIPHPUnitTestRequest::getStatus">getStatus</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestSuperGlobal.php.html#88"><abbr title="CIPHPUnitTestSuperGlobal::getQueryString">getQueryString</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#372"><abbr title="CI_Loader::database">database</abbr></a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#1426"><abbr title="CI_Loader::_ci_prep_filename">_ci_prep_filename</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#1311"><abbr title="CI_Loader::_ci_autoloader">_ci_autoloader</abbr></a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#138"><abbr title="CI_Input::__construct">__construct</abbr></a></td><td class="text-right">87%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#437"><abbr title="CI_Input::ip_address">ip_address</abbr></a></td><td class="text-right">506</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#878"><abbr title="CI_Loader::_ci_load">_ci_load</abbr></a></td><td class="text-right">462</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#364"><abbr title="CI_Input::set_cookie">set_cookie</abbr></a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#177"><abbr title="CI_Input::_fetch_from_array">_fetch_from_array</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#291"><abbr title="CIPHPUnitTestRequest::createAndCallController">createAndCallController</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#685"><abbr title="CI_Input::_clean_input_data">_clean_input_data</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#440"><abbr title="CI_Loader::dbforge">dbforge</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestAutoloader.php.html#96"><abbr title="CIPHPUnitTestAutoloader::loadApplicationClass">loadApplicationClass</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#236"><abbr title="CI_Loader::model">model</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#773"><abbr title="CI_Input::request_headers">request_headers</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#817"><abbr title="CI_Input::get_request_header">get_request_header</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#819"><abbr title="CI_Loader::remove_package_path">remove_package_path</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#1211"><abbr title="CI_Loader::_ci_init_library">_ci_init_library</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#522"><abbr title="CI_Loader::vars">vars</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#408"><abbr title="CI_Loader::dbutil">dbutil</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestFileCache.php.html#16"><abbr title="CIPHPUnitTestFileCache::__construct">__construct</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRouter.php.html#20"><abbr title="CIPHPUnitTestRouter::getRoute">getRoute</abbr></a></td><td class="text-right">28</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#719"><abbr title="CI_Loader::driver">driver</abbr></a></td><td class="text-right">28</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#899"><abbr title="CI_Input::__get">__get</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#740"><abbr title="CI_Input::_clean_input_keys">_clean_input_keys</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#184"><abbr title="CIPHPUnitTestRequest::callControllerMethod">callControllerMethod</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#1311"><abbr title="CI_Loader::_ci_autoloader">_ci_autoloader</abbr></a></td><td class="text-right">16</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#594"><abbr title="CI_Loader::helper">helper</abbr></a></td><td class="text-right">16</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#1121"><abbr title="CI_Loader::_ci_load_stock_library">_ci_load_stock_library</abbr></a></td><td class="text-right">16</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#1025"><abbr title="CI_Loader::_ci_load_library">_ci_load_library</abbr></a></td><td class="text-right">14</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#119"><abbr title="CIPHPUnitTestRequest::request">request</abbr></a></td><td class="text-right">13</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#617"><abbr title="CI_Input::_sanitize_globals">_sanitize_globals</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#330"><abbr title="CI_Input::input_stream">input_stream</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestSuperGlobal.php.html#106"><abbr title="CIPHPUnitTestSuperGlobal::set_SERVER_HttpHeader">set_SERVER_HttpHeader</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#574"><abbr title="CI_Input::valid_ip">valid_ip</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestAutoloader.php.html#130"><abbr title="CIPHPUnitTestAutoloader::loadClassFile">loadClassFile</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestAutoloader.php.html#77"><abbr title="CIPHPUnitTestAutoloader::loadCIPHPUnitTestClass">loadCIPHPUnitTestClass</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTest.php.html#122"><abbr title="CIPHPUnitTest::replaceLoader">replaceLoader</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#190"><abbr title="CI_Loader::library">library</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#372"><abbr title="CI_Loader::database">database</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestSuperGlobal.php.html#29"><abbr title="CIPHPUnitTestSuperGlobal::set_GET">set_GET</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#567"><abbr title="CI_Loader::get_var">get_var</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#851"><abbr title="CI_Input::is_ajax_request">is_ajax_request</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#882"><abbr title="CI_Input::method">method</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#1393"><abbr title="CI_Loader::_ci_object_to_array">_ci_object_to_array</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#268"><abbr title="CI_Input::post_get">post_get</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestAutoloader.php.html#32"><abbr title="CIPHPUnitTestAutoloader::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#268"><abbr title="CIPHPUnitTestRequest::callHook">callHook</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#284"><abbr title="CI_Input::get_post">get_post</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestAutoloader.php.html#68"><abbr title="CIPHPUnitTestAutoloader::loadCIPHPUnitTestAliasClass">loadCIPHPUnitTestAliasClass</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTest.php.html#148"><abbr title="CIPHPUnitTest::setPatcherCacheDir">setPatcherCacheDir</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTest.php.html#21"><abbr title="CIPHPUnitTest::init">init</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTest.php.html#138"><abbr title="CIPHPUnitTest::replaceHelpers">replaceHelpers</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestSuperGlobal.php.html#56"><abbr title="CIPHPUnitTestSuperGlobal::set_SERVER_REQUEST_URI">set_SERVER_REQUEST_URI</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestAutoloader.php.html#53"><abbr title="CIPHPUnitTestAutoloader::load">load</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Input.php.html#138"><abbr title="CI_Input::__construct">__construct</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestAutoloader.php.html#146"><abbr title="CIPHPUnitTestAutoloader::loadFromCache">loadFromCache</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#278"><abbr title="CIPHPUnitTestRequest::setRawInputStream">setRawInputStream</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestSuperGlobal.php.html#18"><abbr title="CIPHPUnitTestSuperGlobal::set_POST">set_POST</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="_ci_phpunit_test/replacing/core/Loader.php.html#1426"><abbr title="CI_Loader::_ci_prep_filename">_ci_prep_filename</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTest.php.html#94"><abbr title="CIPHPUnitTest::createCodeIgniterInstance">createCodeIgniterInstance</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTest.php.html#107"><abbr title="CIPHPUnitTest::wiredesignzHmvcInstalled">wiredesignzHmvcInstalled</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestFileCache.php.html#65"><abbr title="CIPHPUnitTestFileCache::offsetGet">offsetGet</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestSuperGlobal.php.html#88"><abbr title="CIPHPUnitTestSuperGlobal::getQueryString">getQueryString</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="_ci_phpunit_test/CIPHPUnitTestRequest.php.html#356"><abbr title="CIPHPUnitTestRequest::getStatus">getStatus</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.2.4</a> using <a href="https://secure.php.net/" target="_top">PHP 5.5.36</a> and <a href="https://phpunit.de/">PHPUnit 4.8.26</a> at Mon Mar 20 14:58:26 EDT 2017.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../../js/holder.min.js" type="text/javascript"></script>
+  <script src="../../js/d3.min.js" type="text/javascript"></script>
+  <script src="../../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([1,0,4,1,0,2,0,1,0,0,0,2], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([61,0,0,1,1,1,5,5,7,6,0,12], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[16.176470588235,15,"<a href=\"_ci_phpunit_test\/CIPHPUnitTest.php.html#11\">CIPHPUnitTest<\/a>"],[13.924050632911,23,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestAutoloader.php.html#11\">CIPHPUnitTestAutoloader<\/a>"],[12.5,12,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestFileCache.php.html#11\">CIPHPUnitTestFileCache<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestNullCodeIgniter.php.html#14\">CIPHPUnitTestNullCodeIgniter<\/a>"],[26.153846153846,35,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestRequest.php.html#11\">CIPHPUnitTestRequest<\/a>"],[47.058823529412,11,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestRouter.php.html#11\">CIPHPUnitTestRouter<\/a>"],[60,19,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestSuperGlobal.php.html#11\">CIPHPUnitTestSuperGlobal<\/a>"],[100,0,"<a href=\"_ci_phpunit_test\/exceptions\/CIPHPUnitTestShow404Exception.php.html#11\">CIPHPUnitTestShow404Exception<\/a>"],[100,5,"<a href=\"_ci_phpunit_test\/patcher\/third_party\/PHP-Parser\/lib\/PhpParser\/Autoloader.php.html#8\">Autoloader<\/a>"],[11.486486486486,109,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#51\">CI_Input<\/a>"],[45.261121856867,168,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#51\">CI_Loader<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,2,"<a href=\"_ci_phpunit_test\/CIPHPUnitTest.php.html#21\">CIPHPUnitTest::init<\/a>"],[71.428571428571,2,"<a href=\"_ci_phpunit_test\/CIPHPUnitTest.php.html#94\">CIPHPUnitTest::createCodeIgniterInstance<\/a>"],[75,2,"<a href=\"_ci_phpunit_test\/CIPHPUnitTest.php.html#107\">CIPHPUnitTest::wiredesignzHmvcInstalled<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/CIPHPUnitTest.php.html#117\">CIPHPUnitTest::getAutoloadDirs<\/a>"],[0,3,"<a href=\"_ci_phpunit_test\/CIPHPUnitTest.php.html#122\">CIPHPUnitTest::replaceLoader<\/a>"],[0,2,"<a href=\"_ci_phpunit_test\/CIPHPUnitTest.php.html#138\">CIPHPUnitTest::replaceHelpers<\/a>"],[0,2,"<a href=\"_ci_phpunit_test\/CIPHPUnitTest.php.html#148\">CIPHPUnitTest::setPatcherCacheDir<\/a>"],[100,1,"<a href=\"_ci_phpunit_test\/CIPHPUnitTest.php.html#160\">CIPHPUnitTest::loadLoader<\/a>"],[0,2,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestAutoloader.php.html#32\">CIPHPUnitTestAutoloader::__construct<\/a>"],[50,3,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestAutoloader.php.html#53\">CIPHPUnitTestAutoloader::load<\/a>"],[0,2,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestAutoloader.php.html#68\">CIPHPUnitTestAutoloader::loadCIPHPUnitTestAliasClass<\/a>"],[0,3,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestAutoloader.php.html#77\">CIPHPUnitTestAutoloader::loadCIPHPUnitTestClass<\/a>"],[0,7,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestAutoloader.php.html#96\">CIPHPUnitTestAutoloader::loadApplicationClass<\/a>"],[0,3,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestAutoloader.php.html#130\">CIPHPUnitTestAutoloader::loadClassFile<\/a>"],[66.666666666667,3,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestAutoloader.php.html#146\">CIPHPUnitTestAutoloader::loadFromCache<\/a>"],[0,5,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestFileCache.php.html#16\">CIPHPUnitTestFileCache::__construct<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestFileCache.php.html#43\">CIPHPUnitTestFileCache::__destruct<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestFileCache.php.html#53\">CIPHPUnitTestFileCache::dump<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestFileCache.php.html#60\">CIPHPUnitTestFileCache::offsetSet<\/a>"],[75,2,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestFileCache.php.html#65\">CIPHPUnitTestFileCache::offsetGet<\/a>"],[100,1,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestFileCache.php.html#77\">CIPHPUnitTestFileCache::offsetExists<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestFileCache.php.html#82\">CIPHPUnitTestFileCache::offsetUnset<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestNullCodeIgniter.php.html#16\">CIPHPUnitTestNullCodeIgniter::__get<\/a>"],[100,1,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestRequest.php.html#42\">CIPHPUnitTestRequest::__construct<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestRequest.php.html#55\">CIPHPUnitTestRequest::setHeader<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestRequest.php.html#65\">CIPHPUnitTestRequest::setCallable<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestRequest.php.html#76\">CIPHPUnitTestRequest::addCallable<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestRequest.php.html#86\">CIPHPUnitTestRequest::setCallablePreConstructor<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestRequest.php.html#97\">CIPHPUnitTestRequest::addCallablePreConstructor<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestRequest.php.html#106\">CIPHPUnitTestRequest::enableHooks<\/a>"],[50,7,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestRequest.php.html#119\">CIPHPUnitTestRequest::request<\/a>"],[100,1,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestRequest.php.html#172\">CIPHPUnitTestRequest::processError<\/a>"],[0,4,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestRequest.php.html#184\">CIPHPUnitTestRequest::callControllerMethod<\/a>"],[75,1,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestRequest.php.html#236\">CIPHPUnitTestRequest::requestUri<\/a>"],[0,2,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestRequest.php.html#268\">CIPHPUnitTestRequest::callHook<\/a>"],[33.333333333333,2,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestRequest.php.html#278\">CIPHPUnitTestRequest::setRawInputStream<\/a>"],[0,9,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestRequest.php.html#291\">CIPHPUnitTestRequest::createAndCallController<\/a>"],[80,2,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestRequest.php.html#356\">CIPHPUnitTestRequest::getStatus<\/a>"],[47.058823529412,11,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestRouter.php.html#20\">CIPHPUnitTestRouter::getRoute<\/a>"],[100,1,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestSuperGlobal.php.html#13\">CIPHPUnitTestSuperGlobal::set_Global<\/a>"],[75,3,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestSuperGlobal.php.html#18\">CIPHPUnitTestSuperGlobal::set_POST<\/a>"],[75,6,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestSuperGlobal.php.html#29\">CIPHPUnitTestSuperGlobal::set_GET<\/a>"],[56.25,4,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestSuperGlobal.php.html#56\">CIPHPUnitTestSuperGlobal::set_SERVER_REQUEST_URI<\/a>"],[80,2,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestSuperGlobal.php.html#88\">CIPHPUnitTestSuperGlobal::getQueryString<\/a>"],[0,3,"<a href=\"_ci_phpunit_test\/CIPHPUnitTestSuperGlobal.php.html#106\">CIPHPUnitTestSuperGlobal::set_SERVER_HttpHeader<\/a>"],[100,2,"<a href=\"_ci_phpunit_test\/patcher\/third_party\/PHP-Parser\/lib\/PhpParser\/Autoloader.php.html#18\">Autoloader::register<\/a>"],[100,3,"<a href=\"_ci_phpunit_test\/patcher\/third_party\/PHP-Parser\/lib\/PhpParser\/Autoloader.php.html#32\">Autoloader::autoload<\/a>"],[87.5,4,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#138\">CI_Input::__construct<\/a>"],[0,11,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#177\">CI_Input::_fetch_from_array<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#240\">CI_Input::get<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#254\">CI_Input::post<\/a>"],[0,2,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#268\">CI_Input::post_get<\/a>"],[0,2,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#284\">CI_Input::get_post<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#300\">CI_Input::cookie<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#314\">CI_Input::server<\/a>"],[0,3,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#330\">CI_Input::input_stream<\/a>"],[0,16,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#364\">CI_Input::set_cookie<\/a>"],[0,22,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#437\">CI_Input::ip_address<\/a>"],[0,3,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#574\">CI_Input::valid_ip<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#599\">CI_Input::user_agent<\/a>"],[64.516129032258,9,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#617\">CI_Input::_sanitize_globals<\/a>"],[0,7,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#685\">CI_Input::_clean_input_data<\/a>"],[0,4,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#740\">CI_Input::_clean_input_keys<\/a>"],[0,6,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#773\">CI_Input::request_headers<\/a>"],[0,6,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#817\">CI_Input::get_request_header<\/a>"],[0,2,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#851\">CI_Input::is_ajax_request<\/a>"],[100,1,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#866\">CI_Input::is_cli_request<\/a>"],[0,2,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#882\">CI_Input::method<\/a>"],[0,4,"<a href=\"_ci_phpunit_test\/replacing\/core\/Input.php.html#899\">CI_Input::__get<\/a>"],[100,1,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#136\">CI_Loader::__construct<\/a>"],[100,1,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#155\">CI_Loader::initialize<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#172\">CI_Loader::is_loaded<\/a>"],[77.777777777778,7,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#190\">CI_Loader::library<\/a>"],[65.277777777778,22,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#236\">CI_Loader::model<\/a>"],[81.818181818182,7,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#372\">CI_Loader::database<\/a>"],[0,5,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#408\">CI_Loader::dbutil<\/a>"],[0,7,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#440\">CI_Loader::dbforge<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#489\">CI_Loader::view<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#503\">CI_Loader::file<\/a>"],[0,5,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#522\">CI_Loader::vars<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#551\">CI_Loader::clear_vars<\/a>"],[0,2,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#567\">CI_Loader::get_var<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#581\">CI_Loader::get_vars<\/a>"],[60.526315789474,10,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#594\">CI_Loader::helper<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#665\">CI_Loader::helpers<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#681\">CI_Loader::language<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#700\">CI_Loader::config<\/a>"],[23.809523809524,7,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#719\">CI_Loader::driver<\/a>"],[0,1,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#775\">CI_Loader::add_package_path<\/a>"],[100,2,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#802\">CI_Loader::get_package_paths<\/a>"],[0,6,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#819\">CI_Loader::remove_package_path<\/a>"],[0,21,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#878\">CI_Loader::_ci_load<\/a>"],[65.789473684211,10,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#1025\">CI_Loader::_ci_load_library<\/a>"],[55.555555555556,9,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#1121\">CI_Loader::_ci_load_stock_library<\/a>"],[59.322033898305,15,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#1211\">CI_Loader::_ci_init_library<\/a>"],[87.234042553192,16,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#1311\">CI_Loader::_ci_autoloader<\/a>"],[0,2,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#1393\">CI_Loader::_ci_object_to_array<\/a>"],[100,1,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#1408\">CI_Loader::_ci_get_component<\/a>"],[85.714285714286,3,"<a href=\"_ci_phpunit_test\/replacing\/core\/Loader.php.html#1426\">CI_Loader::_ci_prep_filename<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
