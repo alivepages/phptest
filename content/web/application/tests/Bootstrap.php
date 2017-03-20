@@ -1,5 +1,5 @@
 <?php
-die('ssss');
+
 /**
  * CodeIgniter
  *
