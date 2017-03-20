@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1490038350">
-  <project timestamp="1490038350">
+<coverage generated="1490038923">
+  <project timestamp="1490038923">
     <file name="/Users/joel/GitHub/phptest/content/web/application/models/tipocambio/Tipocambio_model.php">
       <class name="Tipocambio_model" namespace="global" fullPackage="Tipocambio">
         <metrics methods="4" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="5" elements="13" coveredelements="7"/>

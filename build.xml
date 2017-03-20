@@ -48,11 +48,11 @@
            <fileset dir="${basedir}">
                <include name="**/*.php" />
                <!-- exclude the tests directory, repeat line below to exclude more -->
-               <exclude name="tests/**" />
+               <exclude name="content/web/application/tests/**" />
                <modified />
            </fileset>
         
-           <fileset dir="${basedir}/tests">
+           <fileset dir="${basedir}/content/web/application/tests">
                <include name="**/*.php" />
                <modified />
            </fileset>
@@ -63,7 +63,7 @@
        <exec executable="${basedir}/build/tools/phploc.phar">
            <!-- exclude tests directory -->
            <arg value="--exclude" />
-           <arg path="${basedir}/tests" />
+           <arg path="${basedir}/content/web/application/tests" />
            <arg value="--log-csv" />
            <arg value="${basedir}/build/logs/phploc.csv" />
            <arg path="${basedir}" />
@@ -79,14 +79,14 @@
             <arg value="--log-xml"/>
             <arg path="${basedir}/build/logs/phploc.xml"/>
             <arg path="${basedir}/src"/>
-            <arg path="${basedir}/tests"/>
+            <arg path="${basedir}/content/web/application/tests"/>
         </exec>
     </target>
 
 
    <target name="pdepend" description="Calculate software metrics using PHP_Depend">
        <exec executable="${basedir}/build/tools/pdepend.phar">
-           <arg value="--ignore=${basedir}/tests,${basedir}/docs" />
+           <arg value="--ignore=${basedir}/content/web/application/tests,${basedir}/docs" />
            <arg value="--jdepend-xml=${basedir}/build/logs/jdepend.xml" />
            <arg value="--jdepend-chart=${basedir}/build/pdepend/dependencies.svg" />
            <arg value="--overview-pyramid=${basedir}/build/pdepend/overview-pyramid.svg" />
@@ -101,7 +101,7 @@
             <arg value="text" />
             <arg value="codesize" />
             <arg value="--exclude" />
-            <arg value="${basedir}/tests" />
+            <arg value="${basedir}/content/web/application/tests" />
         </exec>
     </target>
    
@@ -113,7 +113,7 @@
            <arg value="--reportfile" />
            <arg value="${basedir}/build/logs/pmd.xml" />
            <arg value="--exclude" />
-           <arg value="${basedir}/tests" />
+           <arg value="${basedir}/content/web/application/tests" />
        </exec>
    </target>
 
@@ -121,7 +121,7 @@
             description="Find coding standard violations with CodeSniffer. Use on command line before committing.">
         <exec executable="${basedir}/build/tools/phpcs.phar">
             <arg value="--standard=Zend" />
-            <arg value="--ignore=${basedir}/tests" />
+            <arg value="--ignore=${basedir}/content/web/application/tests" />
             <arg value="--extensions=php" />
             <arg path="${basedir}" />
         </exec>
@@ -133,7 +133,7 @@
            <arg value="--report=checkstyle" />
            <arg value="--report-file=${basedir}/build/logs/checkstyle.xml" />
            <arg value="--standard=Zend" />
-           <arg value="--ignore=${basedir}/tests" />
+           <arg value="--ignore=${basedir}/content/web/application/tests" />
            <arg value="--extensions=php" />
            <arg path="${basedir}" />
        </exec>
@@ -144,7 +144,7 @@
            <arg value="--log-pmd" />
            <arg value="${basedir}/build/logs/pmd-cpd.xml" />
            <arg value="--exclude" />
-           <arg path="${basedir}/tests" />
+           <arg path="${basedir}/content/web/application/tests" />
            <arg path="${basedir}" />
        </exec>
    </target>
