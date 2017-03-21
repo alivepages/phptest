@@ -6,10 +6,10 @@
     <target name="pre-upload" depends="phpcs, phpmd" />
     
    <target name="build"
-       depends="lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd"/>
+       depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpunit"/>
 
     <target name="build-parallel"
-        depends="prepare,lint,tools-parallel"/>
+        depends="prepare,lint,tools-parallel,phpunit"/>
 
     <target name="tools-parallel" description="Run tools in parallel">
        <parallel threadCount="2">
@@ -70,7 +70,7 @@
        </exec>
    </target>
     
-    <target name="phploc-ci" 
+    <target name="phploc-ci" depends="prepare"
             description="Measure project size using PHPLOC and log result in CSV and XML format">
         <exec executable="${basedir}/build/tools/phploc.phar" taskname="phploc">
             <arg value="--count-tests"/>
@@ -149,7 +149,7 @@
    </target>
 
     
-    <target name="phpunit"  description="Run unit tests with PHPUnit">
+    <target name="phpunit" depends="prepare" description="Run unit tests with PHPUnit">
         <exec executable="${basedir}/build/tools/phpunit.phar" resultproperty="result.phpunit" taskname="phpunit">
             <arg value="--configuration"/>
             <arg path="${basedir}/phpunit.xml"/>
