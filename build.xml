@@ -6,10 +6,10 @@
     <target name="pre-upload" depends="phpcs, phpmd" />
     
    <target name="build"
-       depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd"/>
+       depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpunit"/>
 
     <target name="build-parallel"
-        depends="prepare,lint,tools-parallel"/>
+        depends="prepare,lint,tools-parallel,phpunit"/>
 
     <target name="tools-parallel" description="Run tools in parallel">
        <parallel threadCount="2">
@@ -145,6 +145,10 @@
        </exec>
    </target>
 
+
+   <target name="phpunit" description="Run unit tests with PHPUnit">
+       <exec executable="${basedir}/build/tools/phpunit.phar" failonerror="true"/>
+   </target>
     
 
 </project>
