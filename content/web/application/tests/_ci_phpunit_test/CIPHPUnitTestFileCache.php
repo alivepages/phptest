@@ -42,7 +42,7 @@ class CIPHPUnitTestFileCache implements ArrayAccess
 
 	public function __destruct()
 	{
-		file_put_contents($this->file, serialize($this->map));
+		//file_put_contents($this->file, serialize($this->map));
 	}
 
 	/**
