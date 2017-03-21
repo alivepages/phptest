@@ -147,7 +147,7 @@
 
     
     <target name="phpunit" depends="prepare" description="Run unit tests with PHPUnit">
-        <exec executable="${basedir}/content/web/application/vendor/phpunit/phpunit/phpunit" resultproperty="result.phpunit" taskname="phpunit">
+        <exec executable="${basedir}/build/tools/phpunit-5.4.6.phar" resultproperty="result.phpunit" taskname="phpunit">
             <arg value="--configuration"/>
             <arg path="${basedir}/phpunit.xml"/>
         </exec>
