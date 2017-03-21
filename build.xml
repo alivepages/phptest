@@ -147,10 +147,7 @@
 
 
    <target name="phpunit" description="Run unit tests with PHPUnit">
-       <property environment="env"/>
-       <exec executable="${basedir}/build/tools/phpunit.phar" failonerror="true">
-           <env key="PATH" value="${/usr/local/bin}:${env.PATH}"/>
-       </exec>
+       <exec executable="${basedir}/build/tools/phpunit.phar" failonerror="true"/>
    </target>
     
 
