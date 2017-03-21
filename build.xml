@@ -6,7 +6,7 @@
     <target name="pre-upload" depends="phpcs, phpmd" />
     
    <target name="build"
-       depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpunit"/>
+       depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd"/>
 
    
 
@@ -148,11 +148,6 @@
    </target>
 
     
-    <target name="phpunit" depends="prepare" description="Run unit tests with PHPUnit">
-        <exec executable="${basedir}/build/tools/phpunit.phar" resultproperty="result.phpunit" taskname="phpunit">
-            <arg value="--configuration"/>
-            <arg path="${basedir}/phpunit.xml"/>
-        </exec>
-    </target>
+
 
 </project>
