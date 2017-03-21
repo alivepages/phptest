@@ -38,7 +38,6 @@
        <mkdir dir="${basedir}/build/coverage"/>
        <mkdir dir="${basedir}/build/logs"/>
        <mkdir dir="${basedir}/build/pdepend"/>
-       <exec executable="export PATH=/usr/local/bin:$PATH" failonerror="true"/>
    </target>
 
     
@@ -148,7 +147,10 @@
 
 
    <target name="phpunit" description="Run unit tests with PHPUnit">
-       <exec executable="${basedir}/build/tools/phpunit.phar" failonerror="true"/>
+       <property environment="env"/>
+       <exec executable="${basedir}/build/tools/phpunit.phar" failonerror="true">
+           <env key="PATH" value="${/usr/local/bin}:${env.PATH}"/>
+       </exec>
    </target>
     
 
